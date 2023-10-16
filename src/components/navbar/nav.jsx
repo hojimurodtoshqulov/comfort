@@ -11,7 +11,7 @@ const langs = ["ru", "uz"];
 const Nav = () => {
 	const route = useLocation();
 	const [navColorBg, setnavColorBg] = useState(0);
-	const [navSize, setnavSize] = useState("13vh");
+	const [navSize, setnavSize] = useState("12vh");
 	const [navSizeMobile, setnavSizeMobile] = useState("9.4vh");
 	const [navBg, setNavBg] = useState("transparent");
 	const [navLinkColor, setNavLinkColor] = useState("");
@@ -21,7 +21,7 @@ const Nav = () => {
 	// const [navContainerBR, setNavContainerBR] = useState("2px solid #fff");
 	const listenScrollEvent = () => {
 		window.scrollY > 80 ? setnavColorBg(10) : setnavColorBg(0);
-		window.scrollY > 80 ? setnavSize("12vh") : setnavSize("13vh");
+		window.scrollY > 80 ? setnavSize("9vh") : setnavSize("11vh");
 		window.scrollY > 80 ? setNavLinkColor("#fff") : setNavLinkColor("");
 		window.scrollY > 80
 			? setnavSizeMobile("10.4vh")
