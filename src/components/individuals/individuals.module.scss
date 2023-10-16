@@ -1,0 +1,21 @@
+@import "../../styles/variables.scss";
+.individuals {
+	padding: 0 0 0 5%;
+	display: flex;
+	gap: 30px;
+	&_titles {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 50px;
+		p {
+			color: #7d7979;
+			font-size: 30px;
+			line-height: 35px;
+		}
+	}
+	img {
+		width: 44%;
+	}
+}

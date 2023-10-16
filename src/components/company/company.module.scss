@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+
+.company {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 150px;
+	&Col1 {
+		width: 46%;
+		p {
+			font-size: 19px;
+			color: #232536;
+			margin-top: 40px;
+		}
+	}
+	&Col2 {
+		width: 50%;
+		background: #ffa336;
+		color: $light;
+		padding: 60px 100px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 40px 10px;
+		justify-content: space-between;
+		div {
+			width: 45%;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			p {
+				width: 50%;
+				height: 8px;
+				background: #ffffffad;
+				position: relative;
+				span {
+					position: absolute;
+					top: 0;
+					left: 0;
+					display: inline-block;
+					background: $primary;
+					width: 20%;
+					height: 100%;
+				}
+			}
+		}
+	}
+}

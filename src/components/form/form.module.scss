@@ -1,0 +1,36 @@
+@import "../../styles/variables.scss";
+
+.form {
+	background: #1395d8;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 100px;
+	color: #fff;
+	&Titles {
+		width: 50%;
+		p {
+			font-size: 25px;
+			margin-top: 30px;
+		}
+	}
+	form {
+		width: 45%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 20px;
+		input {
+			width: 100%;
+			padding: 10px 20px;
+			height: 60px !important;
+			font-size: 20px;
+			border: none;
+		}
+		button {
+			height: 70px !important;
+			width: 100%;
+		}
+	}
+}

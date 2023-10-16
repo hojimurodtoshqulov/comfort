@@ -1,0 +1,53 @@
+@import "../../styles/variables.scss";
+
+.ourProjects {
+	display: flex;
+	align-items: flex-start;
+	height: 700px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	color: $light;
+	&_number {
+		position: absolute;
+		top: -1.5%;
+		left: -0.5%;
+		font-size: 90px;
+		color: #ffffff74;
+		font-weight: 900;
+	}
+	&_titles {
+		position: absolute;
+		top: 25%;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		h2 {
+			font-size: 130px;
+		}
+		p {
+			padding: 0 15%;
+			font-size: 30px;
+		}
+	}
+	&ImgDiv {
+		height: 100%;
+		width: 33.33333%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 30px;
+		background-size: cover;
+	}
+	&ImgDiv1 {
+		background-image: url("../../../public/ourProjects1.png");
+	}
+	&ImgDiv2 {
+		background-image: url("../../../public/ourProjects2.png");
+	}
+	&ImgDiv3 {
+		background-image: url("../../../public/ourProjects3.png");
+	}
+}

@@ -1,0 +1,15 @@
+.button {
+	color: #fff;
+	padding: 10px 30px;
+	font-size: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	&:hover {
+		transform: scale(1.07);
+	}
+}

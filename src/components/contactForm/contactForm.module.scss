@@ -1,0 +1,66 @@
+@import "../../styles/variables.scss";
+
+.contactForm {
+	display: flex;
+	padding: 200px 0 150px;
+	&Col1 {
+		width: 60%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 30px;
+		h2 {
+		}
+		p {
+			color: #4a4949;
+			font-size: 28px;
+			font-weight: 700;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			justify-content: flex-start;
+			align-items: flex-start;
+			width: 100%;
+			input {
+				width: 70%;
+				border: none;
+				border-bottom: 2px solid #d3d3d7;
+				color: #d3d3d7;
+				padding: 20px;
+			}
+			button {
+				margin-top: 30px !important;
+			}
+		}
+	}
+	&Col2 {
+		width: 40%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 10px;
+		background: #1395d8;
+		color: $light;
+		padding: 70px 50px;
+		h5 {
+			color: #ffffffac;
+			font-weight: normal;
+		}
+		.line {
+			width: 100%;
+			height: 0px;
+			border-top: 2px solid #1189c7;
+		}
+		.icons {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 20px;
+			margin-top: 50px;
+		}
+	}
+}
