@@ -16,7 +16,7 @@ const OurProducts = () => {
 					13,99 А Температурный коэффициент -0.3%/°С Размеры: 2278*1134*30мм
 					Bec: 32 кг
 				</p>
-				<Button btnName={"Lorem ipsum"} bg={"#FFA336"} />
+				<Button btnName={"Подробнее"} bg={"#FFA336"} />
 			</div>
 		</div>
 	);

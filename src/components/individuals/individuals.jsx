@@ -1,7 +1,7 @@
 import Button from "../button/button";
 import Title from "../title";
 import scss from "./individuals.module.scss";
-import img1 from "../../../public/individuals.png"
+import img1 from "../../../public/individuals.png";
 
 const Individuals = () => {
 	return (
@@ -19,7 +19,7 @@ const Individuals = () => {
 					также предоставляем услуги по регулярному обслуживанию и поддержке
 					систем солнечной энергии.
 				</p>
-				<Button btnName={"Lorem ipsum"} bg={"#FFA336"} />
+				<Button btnName={"Подробнее"} bg={"#FFA336"} />
 			</div>
 			<img src={img1} alt={img1} />
 		</div>
