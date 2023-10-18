@@ -21,6 +21,7 @@
 		align-items: flex-start;
 		justify-content: center;
 		gap: 20px;
+		color: #666;
 		input {
 			width: 100%;
 			padding: 10px 20px;
@@ -29,7 +30,8 @@
 			border: none;
 		}
 		button {
-			height: 70px !important;
+			border: none;
+			background: none;
 			width: 100%;
 		}
 	}

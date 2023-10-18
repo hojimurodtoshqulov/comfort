@@ -15,10 +15,16 @@ const AboutUs = () => {
 						возобновляемой энергетике. Наша компания, одна из лидирующих в сфере
 						экологической энергетики и лидирующих технологий в Узбекистане.
 					</p>
-					<div>
-						<img src="/Image 1.png" alt="image 1" />
-						<img src="/Image 2.png" alt="image 2" />
-						<img src="/Image 3.png" alt="image 3" />
+					<div className={scss.about_imgDiv}>
+						<div>
+							<img src="/Image 1.png" alt="image 1" />
+						</div>
+						<div>
+							<img src="/Image 2.png" alt="image 2" />
+						</div>
+						<div>
+							<img src="/Image 3.png" alt="image 3" />
+						</div>
 					</div>
 				</div>
 				<Company />

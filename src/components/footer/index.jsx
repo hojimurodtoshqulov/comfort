@@ -40,11 +40,6 @@ const Footer = () => {
 								</Link>
 							</p>
 							<p>
-								<Link to="/news" onClick={scrollToTop}>
-									Новости
-								</Link>
-							</p>
-							<p>
 								<Link to="/contact" onClick={scrollToTop}>
 									Конакты
 								</Link>

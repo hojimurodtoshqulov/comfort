@@ -6,7 +6,9 @@ import img1 from "../../../public/ourProducts.png";
 const OurProducts = () => {
 	return (
 		<div className={scss.ourProducts}>
-			<img src={img1} alt={img1} />
+			<div className={scss.ourProducts_imgDiv}>
+				<img src={img1} alt={img1} />
+			</div>
 			<div className={scss.ourProducts_titles}>
 				<Title titleName={"Наши товары"} number="03" />
 				<p>

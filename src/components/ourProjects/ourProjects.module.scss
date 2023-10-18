@@ -1,17 +1,21 @@
 @import "../../styles/variables.scss";
-
+.title {
+	padding: 0 0 50px 0;
+	text-align: center;
+}
 .ourProjects {
 	display: flex;
 	align-items: flex-start;
-	height: 700px;
+	height: 80vh;
 	width: 100%;
 	overflow: hidden;
 	position: relative;
 	color: $light;
 	&_number {
 		position: absolute;
-		top: -1.5%;
+		top: -1.8%;
 		left: -0.5%;
+		z-index: 123;
 		font-size: 90px;
 		color: #ffffff74;
 		font-weight: 900;
@@ -40,14 +44,61 @@
 		align-items: center;
 		padding: 30px;
 		background-size: cover;
+		transition: 0.4s;
+		overflow: hidden;
+		position: relative;
+		&:hover {
+			// backdrop-filter: blur(10px);
+			// filter: blur(10px);
+			.imgBG {
+				transform: scale(1);
+				filter: blur(5px);
+			}
+			.logo {
+				position: absolute;
+				top: 38%;
+				opacity: 1;
+				transform: scale(1.1);
+			}
+		}
+		.imgBG {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			transform: scale(1.1);
+			transition: 0.4s;
+		}
+		.logo {
+			transition: 0.4s;
+			position: absolute;
+			top: 38%;
+			z-index: 3;
+			height: auto;
+			width: auto;
+			opacity: 0;
+		}
 	}
-	&ImgDiv1 {
-		background-image: url("../../../public/ourProjects1.png");
-	}
-	&ImgDiv2 {
-		background-image: url("../../../public/ourProjects2.png");
-	}
-	&ImgDiv3 {
-		background-image: url("../../../public/ourProjects3.png");
+	// &ImgDiv1 {
+	// 	background-image: url("../../../public/ourProjects1.png");
+	// }
+	// &ImgDiv2 {
+	// 	background-image: url("../../../public/ourProjects2.png");
+	// }
+	// &ImgDiv3 {
+	// 	background-image: url("../../../public/ourProjects3.png");
+	// }
+}
+.text {
+	// width: 70%;
+	padding: 30px 15% 0;
+	font-size: 30px;
+	text-align: center;
+	color: #7d7979;
+	transition: 0.4s;
+	&:hover {
+		color: #4a4949;
 	}
 }

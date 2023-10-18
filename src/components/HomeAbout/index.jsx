@@ -14,7 +14,9 @@ const HomeAbout = () => {
 						/>
 					</div>
 					<div className={scss.about_imgtext}>
-						<img src={img1} alt={img1} />
+						<div className={scss.about_imgtextImgdiv}>
+							<img src={img1} alt={img1} />
+						</div>
 						<p>
 							Солнечные батареи, также известные как солнечные панели. Они
 							играют важную роль в области возобновляемой энергетики и

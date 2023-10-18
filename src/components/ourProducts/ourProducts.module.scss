@@ -4,6 +4,7 @@
 	display: flex;
 	gap: 30px;
 	&_titles {
+		width: 55%;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -14,9 +15,24 @@
 			color: #7d7979;
 			font-size: 30px;
 			line-height: 35px;
+			transition: 0.4s;
+			&:hover {
+				color: #4a4949;
+			}
 		}
 	}
-	img {
+	&_imgDiv {
 		width: 44%;
+		height: auto;
+		overflow: hidden;
+		img {
+			transform: scale(1.1);
+			width: 100%;
+			height: 100%;
+			transition: 0.4s;
+			&:hover {
+				transform: scale(1);
+			}
+		}
 	}
 }

@@ -21,7 +21,9 @@ const Individuals = () => {
 				</p>
 				<Button btnName={"Подробнее"} bg={"#FFA336"} />
 			</div>
-			<img src={img1} alt={img1} />
+			<div  className={scss.individuals_imgDiv}>
+				<img src={img1} alt={img1} />
+			</div>
 		</div>
 	);
 };

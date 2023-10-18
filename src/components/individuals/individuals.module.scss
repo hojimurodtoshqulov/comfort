@@ -9,13 +9,29 @@
 		align-items: flex-start;
 		justify-content: center;
 		gap: 50px;
+		width: 55%;
 		p {
 			color: #7d7979;
 			font-size: 30px;
 			line-height: 35px;
+			transition: 0.4s;
+			&:hover {
+				color: #4a4949;
+			}
 		}
 	}
-	img {
+	&_imgDiv {
 		width: 44%;
+		height: 600px;
+		overflow: hidden;
+		img {
+			transform: scale(1.1);
+			height: 100%;
+			width: 100%;
+			transition: 0.4s;
+			&:hover {
+				transform: scale(1);
+			}
+		}
 	}
 }
