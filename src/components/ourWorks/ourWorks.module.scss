@@ -20,6 +20,7 @@
 		&:hover {
 			.imgBG {
 				transform: scale(1);
+				filter: blur(10px);
 			}
 			.logo {
 				transform: scale(1.1);
