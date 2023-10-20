@@ -25,24 +25,24 @@ const OurProducts = () => {
 	const tLength = data.length;
 	return (
 		<div className={scss.ourProducts}>
-			<div className={scss.ourProducts_imgDiv}>
+			<motion.div className={scss.ourProducts_imgDiv}>
 				<motion.img
 					key={select}
-					initial={{ opacity: 0, x: -20 }}
-					animate={{ opacity: 1, x: 0 }}
-					exit={{ opacity: 0, x: 20 }}
-					transition={{ duration: 0.3 }}
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					exit={{ opacity: 0 }}
+					transition={{ duration: 0.2 }}
 					src={data[select].img}
 					alt={data[select]}
 				/>
-			</div>
+			</motion.div>
 			<div className={scss.ourProducts_titles}>
 				<Title titleName={"Наши товары"} number="03" />
 				<motion.p
 					key={select}
-					initial={{ opacity: 1, x: 100 }}
-					animate={{ opacity: 1, x: 0 }}
-					exit={{ opacity: 1, x: -100 }}
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					exit={{ opacity: 0 }}
 					transition={{ duration: 0.2 }}
 				>
 					{data[select].text}

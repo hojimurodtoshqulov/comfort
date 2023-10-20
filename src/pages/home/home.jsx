@@ -7,6 +7,8 @@ import OurProjects from "../../components/ourProjects/ourProjects";
 import Clients from "../../components/clients/clients";
 import Map from "../../components/map/map";
 import Form from "../../components/form/form";
+import Partners from "../../components/partners/partners";
+import Legal from "../../components/legal/legal";
 // import Adventure from "../../components/adventure";
 // import OurWorks from "../../components/our-works";
 // import Services from "../../components/services";
@@ -28,6 +30,9 @@ const Home = () => {
 				<HomeAbout />
 			</div>
 			<div style={{ margin: "150px 0 0 0" }}>
+				<Legal />
+			</div>
+			<div style={{ margin: "150px 0 0 0" }}>
 				<Individuals />
 			</div>
 			<div style={{ margin: "150px 0 0 0" }}>
@@ -35,6 +40,9 @@ const Home = () => {
 			</div>
 			<div style={{ margin: "150px 0 0 0" }}>
 				<OurProjects />
+			</div>
+			<div style={{ margin: "150px 0 0 0" }}>
+				<Partners />
 			</div>
 			<div style={{ margin: "150px 0 0 0" }}>
 				<Clients />

@@ -1,0 +1,50 @@
+@import "../../styles/variables.scss";
+* {
+	transition: 0.3s;
+}
+.partners {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1%;
+	&_col1 {
+		width: 48%;
+		p {
+			margin: 50px 0 0 0;
+			width: 80%;
+			color: #232536;
+			font-size: 25px;
+		}
+	}
+	&_col2 {
+		width: 50%;
+		position: relative;
+		padding: 0 0 0 20px;
+		&_leftImg {
+			width: auto;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: -1%;
+		}
+		p {
+			margin: 0 0 50px 0;
+			width: 90%;
+			color: #232536;
+			font-size: 25px;
+		}
+		div {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 10px;
+			h5 {
+				span {
+					color: #232536;
+					font-size: 14px;
+					font-weight: normal;
+				}
+			}
+		}
+	}
+}
