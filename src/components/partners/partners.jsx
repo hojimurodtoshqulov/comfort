@@ -10,7 +10,7 @@ const Partners = () => {
 					<Title
 						titleName={"Наши клиенты дорожат нашей работой"}
 						width={100}
-						number={"05"}
+						number={"06"}
 					/>
 					<p>
 						It is a long established fact that a reader will be distracted by

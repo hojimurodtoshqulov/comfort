@@ -6,7 +6,7 @@ const Clients = () => {
 		<div className={scss.Clients}>
 			<div className="container">
 				<div className={scss.clients}>
-					<span className={scss.clientsNumber}>05</span>
+					<span className={scss.clientsNumber}>07</span>
 					<Title titleName={"НАШИ КЛИЕНТЫ"} color={"white"} />
 					<div className={scss.clientsImages}>
 						<div className={scss.clientsImagesRow}>

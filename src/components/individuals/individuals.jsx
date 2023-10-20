@@ -11,7 +11,7 @@ const Individuals = () => {
 		<>
 			<div className={scss.individuals}>
 				<div className={scss.individuals_titles}>
-					<Title titleName={"Физические лица"} number="02" />
+					<Title titleName={"Физические лица"} number="03" />
 					{/* Юридическое лицо Legal entity */}
 					<p>
 						Мы устанавливаем наши солнечные панели в жилые дома, предоставляя
@@ -37,9 +37,12 @@ const Individuals = () => {
 				</div>
 			</div>
 			<Modal open={openForm} setOpen={setOpenForm} width={90}>
-				<div className={scss.individuals}>
-					<div className={scss.individuals_titles}>
-						<Title titleName={"Физические лица"} number="02" />
+				<div className={scss.modal_individuals}>
+					<div className={scss.modal_individuals_imgDiv}>
+						<img src={img1} alt={img1} />
+					</div>
+					<div className={scss.modal_individuals_titles}>
+						<Title titleName={"Физические лица"} number="03" />
 						{/* Юридическое лицо Legal entity */}
 						<p>
 							Мы устанавливаем наши солнечные панели в жилые дома, предоставляя
@@ -49,9 +52,6 @@ const Individuals = () => {
 							проектируем систему, выбираем подходящее оборудование и определяем
 							стоимость.
 						</p>
-					</div>
-					<div className={scss.individuals_imgDiv}>
-						<img src={img1} alt={img1} />
 					</div>
 				</div>
 			</Modal>

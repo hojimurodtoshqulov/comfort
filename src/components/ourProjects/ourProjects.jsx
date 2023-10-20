@@ -11,7 +11,7 @@ const OurProjects = () => {
 				<Title titleName={"НАШИ ПРОЕКТЫ"} width={100} />
 			</div>
 			<div className={scss.ourProjects}>
-				<span className={scss.ourProjects_number}>04</span>
+				<span className={scss.ourProjects_number}>05</span>
 				{/* <div className={scss.ourProjects_titles}>
 					<h2>НАШИ ПРОЕКТЫ</h2>
 					<p>

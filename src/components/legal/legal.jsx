@@ -34,11 +34,11 @@ const Legal = () => {
 				</div>
 			</div>
 			<Modal open={openForm} setOpen={setOpenForm} width={90}>
-				<div className={scss.legal}>
-					<div className={scss.legal_imgDiv}>
+				<div className={scss.modal_legal}>
+					<div className={scss.modal_legal_imgDiv}>
 						<img src={img1} alt={img1} />
 					</div>
-					<div className={scss.legal_titles}>
+					<div className={scss.modal_legal_titles}>
 						<Title titleName={"Юридическое лицо"} number="02" />
 						{/*  Legal entity */}
 						<p>

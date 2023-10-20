@@ -3,6 +3,8 @@
 	padding: 0;
 	display: flex;
 	gap: 30px;
+	position: relative;
+	padding: 0 0 80px 0;
 	&_titles {
 		width: 55%;
 		display: flex;
@@ -20,31 +22,12 @@
 				color: #4a4949;
 			}
 		}
-		.buttonDiv {
-			button {
-				width: 40px;
-				height: 40px;
-				background: none;
-				border: 2px solid #434343;
-				border-radius: 7px;
-				transform: rotate(45deg);
-				margin-right: 25px;
-				cursor: pointer;
-				transition: 0.4s;
-				&:hover {
-					transform: rotate(45deg) scale(1.1);
-				}
-				span {
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					svg {
-						color: #434343;
-						font-size: 25px;
-						transform: rotate(-45deg);
-					}
-				}
-			}
+		.category {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 20px 10px;
+			flex-wrap: wrap;
 		}
 	}
 	&_imgDiv {
@@ -62,6 +45,35 @@
 			height: 100%;
 			transition: 0.4s;
 			cursor: pointer;
+		}
+	}
+	.buttonDiv {
+		position: absolute;
+		bottom: 0px;
+		left: 42%;
+		button {
+			width: 40px;
+			height: 40px;
+			background: none;
+			border: 2px solid #434343;
+			border-radius: 7px;
+			transform: rotate(45deg);
+			margin-right: 25px;
+			cursor: pointer;
+			transition: 0.4s;
+			&:hover {
+				transform: rotate(45deg) scale(1.1);
+			}
+			span {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				svg {
+					color: #434343;
+					font-size: 25px;
+					transform: rotate(-45deg);
+				}
+			}
 		}
 	}
 }

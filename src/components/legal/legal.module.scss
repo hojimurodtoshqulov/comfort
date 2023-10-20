@@ -35,3 +35,45 @@
 		}
 	}
 }
+.modal_legal {
+	padding: 50px 0;
+	display: flex;
+	gap: 70px;
+	h2 {
+		color: $light;
+	}
+	span {
+		color: #4a4949;
+	}
+	&_titles {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 50px;
+		width: 50%;
+		p {
+			color: $light;
+			font-size: 20px;
+			line-height: 25px;
+			transition: 0.4s;
+			&:hover {
+				color: #c2c2c2;
+			}
+		}
+	}
+	&_imgDiv {
+		width: 48%;
+		height: 500px;
+		overflow: hidden;
+		img {
+			transform: scale(1.1);
+			height: 100%;
+			width: 100%;
+			transition: 0.4s;
+			&:hover {
+				transform: scale(1);
+			}
+		}
+	}
+}
