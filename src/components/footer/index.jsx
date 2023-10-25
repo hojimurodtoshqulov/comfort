@@ -74,9 +74,6 @@ const Footer = () => {
 					<a href="https://instagram.com">
 						<FaInstagram />
 					</a>
-					<a href="https://linkedin.com">
-						<FaLinkedin />
-					</a>
 				</div>
 			</div>
 		</div>

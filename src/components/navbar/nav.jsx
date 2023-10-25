@@ -96,7 +96,7 @@ const Nav = () => {
 							>
 								{t("О нас")} <span></span>
 							</NavLink>{" "}
-							<Link
+							<NavLink
 								style={{ color: navLinkColor }}
 								onClick={scrollToTop}
 								className={scss.dropdown}
@@ -105,8 +105,7 @@ const Nav = () => {
 								{t("Проекты")}
 
 								<span></span>
-							</Link>{" "}
-
+							</NavLink>
 							<NavLink
 								style={{ color: navLinkColor }}
 								to="/contact"

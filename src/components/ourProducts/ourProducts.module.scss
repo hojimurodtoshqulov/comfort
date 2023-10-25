@@ -5,6 +5,11 @@
 	gap: 30px;
 	position: relative;
 	padding: 0 0 80px 0;
+	@media (max-width: $md) {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 	&_titles {
 		width: 55%;
 		display: flex;
@@ -13,6 +18,16 @@
 		justify-content: center;
 		gap: 50px;
 		padding: 0 5%;
+		@media (max-width: $md) {
+			align-items: center;
+			order: 2;
+			padding: 0 2%;
+			width: 100%;
+		}
+		h2 {
+			@media (max-width: $md) {
+			}
+		}
 		p {
 			color: #7d7979;
 			font-size: 30px;
@@ -20,6 +35,10 @@
 			transition: 0.4s;
 			&:hover {
 				color: #4a4949;
+			}
+			@media (max-width: $md) {
+				font-size: 20px;
+				line-height: 25px;
 			}
 		}
 		.category {
@@ -38,6 +57,9 @@
 			img {
 				transform: scale(1);
 			}
+		}
+		@media (max-width: $md) {
+			display: none;
 		}
 		img {
 			transform: scale(1.1);

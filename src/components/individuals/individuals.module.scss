@@ -3,6 +3,12 @@
 	padding: 0 0 0 5%;
 	display: flex;
 	gap: 30px;
+	@media (max-width: $md) {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		padding: 0 2%;
+	}
 	&_titles {
 		display: flex;
 		flex-direction: column;
@@ -10,6 +16,11 @@
 		justify-content: center;
 		gap: 50px;
 		width: 55%;
+		@media (max-width: $md) {
+			width: 100%;
+			text-align: center;
+			align-items: center;
+		}
 		p {
 			color: #7d7979;
 			font-size: 30px;
@@ -18,12 +29,19 @@
 			&:hover {
 				color: #4a4949;
 			}
+			@media (max-width: $md) {
+				font-size: 20px;
+				line-height: 25px;
+			}
 		}
 	}
 	&_imgDiv {
 		width: 44%;
 		height: 600px;
 		overflow: hidden;
+		@media (max-width: $md) {
+			display: none;
+		}
 		img {
 			transform: scale(1.1);
 			height: 100%;

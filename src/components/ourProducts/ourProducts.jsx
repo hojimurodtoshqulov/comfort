@@ -46,7 +46,7 @@ const OurProducts = () => {
 					exit={{ opacity: 0 }}
 					transition={{ duration: 0.2 }}
 				>
-					{data[select].text}
+					Yingli Solar Panda 3.0 PRO Bifacial Пиковая мощность: 550 Вт-144 ячеек Напряжение холостого хода: 50.26 В Напряжение максимальной мощности: 41.57 В Ток максимальной мощности: 13,24 А Ток короткого замыкания: 13,99 А Температурный коэффициент -0.3%/°С Размеры: 2278*1134*30мм Bec: 32 кг
 				</motion.p>
 				<div className={scss.category}>
 					<Link to={"/projects"}>

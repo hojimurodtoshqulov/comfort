@@ -7,37 +7,66 @@
 	justify-content: space-between;
 	align-items: center;
 	gap: 1%;
+	flex-wrap: nowrap;
+	@media (max-width: $sm) {
+		flex-wrap: wrap;
+	}
 	&_col1 {
 		width: 48%;
+		@media (max-width: $sm) {
+			width: 100%;
+			text-align: center;
+		}
 		p {
 			margin: 50px 0 0 0;
 			width: 80%;
 			color: #232536;
 			font-size: 25px;
+			@media (max-width: $sm) {
+				width: 100%;
+				font-size: 20px;
+				margin: 50px 0;
+			}
 		}
 	}
 	&_col2 {
 		width: 50%;
 		position: relative;
 		padding: 0 0 0 20px;
+		@media (max-width: $sm) {
+			width: 100%;
+			padding: 0;
+		}
 		&_leftImg {
 			width: auto;
 			height: 100%;
 			position: absolute;
 			top: 0;
 			left: -1%;
+			@media (max-width: $sm) {
+				display: none;
+			}
 		}
 		p {
 			margin: 0 0 50px 0;
 			width: 90%;
 			color: #232536;
 			font-size: 25px;
+			@media (max-width: $sm) {
+				margin: 0 0 20px 0;
+				text-align: center;
+				width: 100%;
+				font-size: 20px;
+			}
 		}
 		div {
 			display: flex;
 			align-items: center;
 			justify-content: flex-start;
 			gap: 10px;
+			@media (max-width: $sm) {
+				justify-content: center;
+			}
 			h5 {
 				span {
 					color: #232536;

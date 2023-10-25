@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 .logos {
 	display: flex;
 	align-items: center;
@@ -5,4 +7,20 @@
 	gap: 30px;
 	margin: 100px 0;
 	background: #fafafc;
+	@media (max-width: $sm) {
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+	a {
+		@media (max-width: $sm) {
+			display: inline-block;
+			width: 48%;
+			overflow: hidden;
+		}
+		img {
+			@media (max-width: $sm) {
+				transform: translate(-10%, 0%);
+			}
+		}
+	}
 }

@@ -69,9 +69,6 @@ const Layout = ({ children }) => {
 				) : (
 					<>
 						<Nav />
-						<div className="mobileNav">
-							<MobileNav />
-						</div>
 					</>
 				)}
 				{children}

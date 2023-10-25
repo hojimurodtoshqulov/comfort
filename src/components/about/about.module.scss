@@ -7,18 +7,35 @@
 	justify-content: flex-start;
 	gap: 30px;
 	padding: 200px 0 0 0;
+	@media (max-width: $sm) {
+		padding: 150px 0 0 0;
+	}
+	h2 {
+		@media (max-width: $sm) {
+			width: 100%;
+		}
+	}
 	p {
 		font-size: 23px;
-		color: #232536;
 		width: 70%;
+		color: #232536;
+		@media (max-width: $sm) {
+			font-size: 18px;
+			width: 100%;
+		}
 	}
 	&_imgDiv {
 		display: flex;
+		flex-wrap: wrap;
 		gap: 1%;
 		div {
 			width: 32%;
 			height: auto;
 			overflow: hidden;
+			@media (max-width: $sm) {
+				width: 100%;
+				margin-bottom: 10px;
+			}
 		}
 		img {
 			width: 100%;

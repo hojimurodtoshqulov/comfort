@@ -1,0 +1,8 @@
+@import "../../styles/variables.scss";
+.map {
+	width: 100%;
+	height: 90vh;
+	@media (max-width: $sm) {
+		height: 70vh;
+	}
+}
