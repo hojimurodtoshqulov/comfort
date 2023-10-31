@@ -1,14 +1,16 @@
 import scss from "./HomeAbout.module.scss";
 import img1 from "../../../public/comfortAbout.png";
 import Title from "../title";
+import { useTranslation } from "react-i18next";
 const HomeAbout = () => {
+const { t } = useTranslation();
 	return (
 		<>
 			<div className="container">
 				<div className={scss.about}>
 					<div className={scss.about_title}>
 						<Title
-							titleName={"Зачем нужны солнечные батареи?"}
+							titleName={t("home.about.title")}
 							width={100}
 							number={"01"}
 						/>
@@ -18,10 +20,7 @@ const HomeAbout = () => {
 							<img src={img1} alt={img1} />
 						</div>
 						<p>
-							Солнечные батареи, также известные как солнечные панели. Они
-							играют важную роль в области возобновляемой энергетики и
-							становятся все более популярными в различных секторах, включая
-							жилые дома, коммерческие здания и промышленные комплексы.
+							{t("home.about.text")}
 						</p>
 					</div>
 				</div>

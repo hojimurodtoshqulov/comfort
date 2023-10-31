@@ -9,19 +9,14 @@ import Map from "../../components/map/map";
 import Form from "../../components/form/form";
 import Partners from "../../components/partners/partners";
 import Legal from "../../components/legal/legal";
-// import Adventure from "../../components/adventure";
-// import OurWorks from "../../components/our-works";
-// import Services from "../../components/services";
-// import Quality from "../../components/quality";
-// import Perfect from "../../components/perfect";
-
+import { useTranslation } from "react-i18next";
 const Home = () => {
+const { t } = useTranslation();
 	return (
 		<div>
 			<Header
-				head1={"Comfort Sunpower"}
-				head2={""}
-				paragraph="Солнечная энергия для вашего удобства"
+				head1={t("home.showcase.title")}
+				paragraph={t("home.showcase.text")}
 				titleSize="130"
 				textSize="45"
 				textWidth="70"

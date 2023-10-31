@@ -26,25 +26,17 @@ const Header = ({
 	const headerData = [
 		{
 			img: img1,
-			title: t("home.q&a.slider1.title"),
-			text: t("home.q&a.slider1.text"),
 		},
 		{
 			img: img3,
-			title: t("home.q&a.slider2.title"),
-			text: t("home.q&a.slider2.text"),
 		},
 	];
 	const headerData2 = [
 		{
 			img: img2,
-			title: t("home.q&a.slider1.title"),
-			text: t("home.q&a.slider1.text"),
 		},
 		{
 			img: img4,
-			title: t("home.q&a.slider2.title"),
-			text: t("home.q&a.slider2.text"),
 		},
 	];
 	const tLength = headerData.length;
@@ -52,9 +44,6 @@ const Header = ({
 	const scrollToTop = () => {
 		window.scrollTo(0, 0);
 	};
-
-	const texts = [<>{t("home.hero.text")}</>, <>{t("home.hero.text2")}</>];
-	// const btnLinks = ["/cho'lquvar", "/paxtazor"];
 	useEffect(() => {
 		const interval = setInterval(() => {
 			selected === tLength - 1

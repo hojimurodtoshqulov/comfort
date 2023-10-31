@@ -1,14 +1,16 @@
 import scss from "./ourProjects.module.scss";
 import { Link } from "react-router-dom";
 import Title from "../title";
+import { useTranslation } from "react-i18next";
 const OurProjects = () => {
+	const { t } = useTranslation();
 	const scrollToTop = () => {
 		window.scrollTo(0, 0);
 	};
 	return (
 		<>
 			<div className={scss.title}>
-				<Title titleName={"НАШИ ПРОЕКТЫ"} width={100} />
+				<Title titleName={t("home.projects.title")} width={100} />
 			</div>
 			<div className={scss.ourProjects}>
 				<span className={scss.ourProjects_number}>05</span>
@@ -64,12 +66,7 @@ const OurProjects = () => {
 					<p>Turon Textile .</p>
 				</Link>
 			</div>
-			<p className={scss.text}>
-				Мы гордимся тем, что наши проекты отличаются высоким качеством и
-				соответствуют ожиданиям наших клиентов. Наша цель - создавать продукты и
-				услуги, которые удовлетворяют потребности пользователей и приносят успех
-				нашим клиентам
-			</p>
+			<p className={scss.text}>{t("home.projects.text")}</p>
 		</>
 	);
 };

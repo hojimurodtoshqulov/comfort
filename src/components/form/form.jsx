@@ -3,8 +3,9 @@ import Title from "../title";
 import scss from "./form.module.scss";
 import axios from "axios";
 import { useState } from "react";
-
+import { useTranslation } from "react-i18next";
 const Form = () => {
+	const { t } = useTranslation();
 	const [formValues, setFormValues] = useState({
 		name: "",
 		phone: "",
@@ -46,15 +47,8 @@ const Form = () => {
 		<div className="container">
 			<div className={scss.form}>
 				<div className={scss.formTitles}>
-					<Title
-						titleName={"Оставить свою заявку можете тут"}
-						color={"white"}
-						width={100}
-					/>
-					<p>
-						Наши специалисты свяжутся с вами в скором времени Свяжитесь с нами и
-						получите бесплатную консультацию
-					</p>
+					<Title titleName={t("home.form.title")} color={"white"} width={100} />
+					<p>{t("home.form.text")}</p>
 				</div>
 				<form action="" onSubmit={onSubmit}>
 					<input
@@ -62,7 +56,7 @@ const Form = () => {
 						onChange={(e) => handle(e)}
 						value={formValues.name}
 						type="text"
-						placeholder="Имя"
+						placeholder={t("home.form.input1")}
 						required
 					/>
 					<input
@@ -70,12 +64,12 @@ const Form = () => {
 						onChange={(e) => handle(e)}
 						value={formValues.phone}
 						type="text"
-						placeholder="Номер"
+						placeholder={t("home.form.input2")}
 						required
 					/>
 					<button type="submit">
 						<Button
-							btnName={"Отправить"}
+							btnName={t("btn.btn2")}
 							bg={"#FFA336"}
 							width={100}
 							height={60}

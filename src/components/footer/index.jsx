@@ -6,7 +6,9 @@ import {
 	FaLinkedin,
 	FaTelegramPlane,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 const Footer = () => {
+	const { t } = useTranslation();
 	const scrollToTop = () => {
 		window.scrollTo(0, 0);
 	};
@@ -21,33 +23,35 @@ const Footer = () => {
 							</div>
 							<div className={scss.link}>
 								<a href="tel:+998910024242">+998 91 002 42 42</a>
-								<a href="mailto:u.isakov@gmail.com">u.isakov@gmail.com</a>
+								<a href="mailto:info@comfortsunpower.uz">
+									info@comfortsunpower.uz
+								</a>
 							</div>
-							<p>DLF Cybercity, Bhubaneswar, India, &52050</p>
+							<p> {t("footer.adress")} </p>
 						</div>
 					</div>
 					<div className={scss.footer__middle}>
-						<h4>Основные ссылки</h4>
+						<h4>{t("footer.links")}</h4>
 						<div className={scss.links}>
 							<p>
 								<Link to="/about" onClick={scrollToTop}>
-									О нас
+									{t("nav.about")}
 								</Link>
 							</p>
 							<p>
 								<Link to="/projects" onClick={scrollToTop}>
-									Проекты
+									{t("nav.projects")}
 								</Link>
 							</p>
 							<p>
 								<Link to="/contact" onClick={scrollToTop}>
-									Конакты
+									{t("nav.contact")}
 								</Link>
 							</p>
 						</div>
 					</div>
 					<div className={scss.footer__right}>
-						<h4>Социальные сети</h4>
+						<h4>{t("footer.networks")}</h4>
 						<div className={scss.links}>
 							<p>
 								<a href="https://telegram.com">Telegram</a>
@@ -63,7 +67,7 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className={scss.footer_bottom}>
-				<p>©2021 COMFORT SUN POWER</p>
+				<p>©2023 COMFORT SUN POWER</p>
 				<div className={scss.footer_bottomIcons}>
 					<a href="https://telegram.com">
 						<FaTelegramPlane />

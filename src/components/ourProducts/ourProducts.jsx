@@ -6,21 +6,22 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
-
+import { useTranslation } from "react-i18next";
 const OurProducts = () => {
+	const { t } = useTranslation();
 	const [select, setSelect] = useState(0);
 	const data = [
 		{
 			img: "/ourProducts.png",
-			text: "Yingli Solar Panda 3.0 PRO Bifacial Пиковая мощность: 550 Вт-144 ячеек Напряжение холостого хода: 50.26 В Напряжение максимальной мощности: 41.57 В Ток максимальной мощности: 13,24 А Ток короткого замыкания: 13,99 А Температурный коэффициент -0.3%/°С Размеры: 2278*1134*30мм Bec: 32 кг",
+			text: t("home.products.text"),
 		},
 		{
 			img: "/works2.png",
-			text: "Solar Panda 3.0 PRO Bifacial Пиковая мощность: 550 Вт-144 ячеек Напряжение холостого хода: 50.26 В Напряжение максимальной мощности: 41.57 В Ток максимальной мощности: 13,24 А Ток короткого замыкания: 13,99 А Температурный коэффициент -0.3%/°С Размеры: 2278*1134*30мм Bec: 32 кг",
+			text: t("home.products.text"),
 		},
 		{
 			img: "/works3.png",
-			text: " Panda 3.0 PRO Bifacial Пиковая мощность: 550 Вт-144 ячеек Напряжение холостого хода: 50.26 В Напряжение максимальной мощности: 41.57 В Ток максимальной мощности: 13,24 А Ток короткого замыкания: 13,99 А Температурный коэффициент -0.3%/°С Размеры: 2278*1134*30мм Bec: 32 кг",
+			text: t("home.products.text"),
 		},
 	];
 	const tLength = data.length;
@@ -38,7 +39,7 @@ const OurProducts = () => {
 				/>
 			</motion.div>
 			<div className={scss.ourProducts_titles}>
-				<Title titleName={"Наши товары"} number="04" />
+				<Title titleName={t("home.products.title")} number="04" />
 				<motion.p
 					key={select}
 					initial={{ opacity: 0 }}
@@ -46,20 +47,20 @@ const OurProducts = () => {
 					exit={{ opacity: 0 }}
 					transition={{ duration: 0.2 }}
 				>
-					Yingli Solar Panda 3.0 PRO Bifacial Пиковая мощность: 550 Вт-144 ячеек Напряжение холостого хода: 50.26 В Напряжение максимальной мощности: 41.57 В Ток максимальной мощности: 13,24 А Ток короткого замыкания: 13,99 А Температурный коэффициент -0.3%/°С Размеры: 2278*1134*30мм Bec: 32 кг
+					{t("home.products.text")}
 				</motion.p>
 				<div className={scss.category}>
 					<Link to={"/projects"}>
-						<Button btnName={"Солнечные панели"} bg={"#767676"} />
+						<Button btnName={t("home.products.btn1")} bg={"#FFA336"} />
 					</Link>
 					<Link to={"/projects"}>
-						<Button btnName={"Инверторы"} bg={"#767676"} />
+						<Button btnName={t("home.products.btn2")} bg={"#FFA336"} />
 					</Link>
 					<Link to={"/projects"}>
-						<Button btnName={"Аккумуляторы "} bg={"#767676"} />
+						<Button btnName={t("home.products.btn3")} bg={"#FFA336"} />
 					</Link>
 					<Link to={"/projects"}>
-						<Button btnName={"Комплектующие"} bg={"#767676"} />
+						<Button btnName={t("home.products.btn4")} bg={"#FFA336"} />
 					</Link>
 				</div>
 			</div>

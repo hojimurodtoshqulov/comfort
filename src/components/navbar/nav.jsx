@@ -94,15 +94,15 @@ const Nav = () => {
 								to="/about"
 								onClick={scrollToTop}
 							>
-								{t("О нас")} <span></span>
-							</NavLink>{" "}
+								{t("nav.about")} <span></span>
+							</NavLink>
 							<NavLink
 								style={{ color: navLinkColor }}
 								onClick={scrollToTop}
 								className={scss.dropdown}
 								to={"projects"}
 							>
-								{t("Проекты")}
+								{t("nav.projects")}
 
 								<span></span>
 							</NavLink>
@@ -111,7 +111,7 @@ const Nav = () => {
 								to="/contact"
 								onClick={scrollToTop}
 							>
-								{t("Контакты")} <span></span>
+								{t("nav.contact")} <span></span>
 							</NavLink>
 							<div className={scss.nav__container_lang}>
 								<div className="dropdown">

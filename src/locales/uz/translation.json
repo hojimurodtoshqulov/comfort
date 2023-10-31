@@ -1,1 +1,61 @@
-{}
+{
+	"nav": {
+		"about": "Biz haqimizda",
+		"projects": "Proektlar",
+		"products": "Mahsulotlar",
+		"contact": "Aloqa"
+	},
+	"footer": {
+		"adress": "O'zbekiston, Toshkent sh, Kichik halqa, 15",
+		"links": "Asosiy havolalar",
+		"networks": "Tarmoqlar"
+	},
+	"btn": {
+		"btn1": "Btafsil",
+		"btn2": "Yuborish"
+	},
+	"home": {
+		"showcase": {
+			"title": "Comfort Sunpower",
+			"text": "Sizning qulayligingiz uchun quyosh energiyasi."
+		},
+		"about": {
+			"title": "Quyosh panellari nima uchun kerak?",
+			"text": "Quyosh panellari, shuningdek, quyosh panellari sifatida ham tanilgan. Ular qayta tiklanadigan energiya sohasida muhim rol o'ynaydi va turli sohalarda, jumladan, turar-joy binolari, savdo binolar va sanoat majmualarida tobora ommalashib bormoqda."
+		},
+		"legal": {
+			"title": "Yuridik shaxslar",
+			"text": "Biz quyosh panellarimizni turar-joylarga o'rnatamiz va qayta tiklanadigan energiya tizimini loyihalash, o'rnatish va texnik xizmat ko'rsatish bo'yicha to'liq spektrni taqdim etamiz. Biz mijoz bilan maslahatlashuvdan boshlaymiz, u erda uning quyosh energiyasiga bo'lgan ehtiyojlarini aniqlaymiz. Keyin biz tizimni loyihalashtiramiz, mos uskunani tanlaymiz va narxni aniqlaymiz."
+		},
+		"individuals": {
+			"title": "Jismoniy shaxslar",
+			"text": "Biz quyosh panellarimizni turar-joylarga o'rnatamiz va qayta tiklanadigan energiya tizimini loyihalash, o'rnatish va texnik xizmat ko'rsatish bo'yicha to'liq spektrni taqdim etamiz. Biz mijoz bilan maslahatlashuvdan boshlaymiz, u erda uning quyosh energiyasiga bo'lgan ehtiyojlarini aniqlaymiz. Keyin biz tizimni loyihalashtiramiz, mos uskunani tanlaymiz va narxni aniqlaymiz. Mijoz bilan kelishilganimizdan so'ng biz quyosh panellarini o'rnatamiz va mijozlarga foydalanish bo'yicha ko'rsatmalar beramiz. Shuningdek, biz quyosh energiyasi tizimlariga muntazam texnik xizmat ko'rsatamiz va qo'llab-quvvatlaymiz."
+		},
+		"products": {
+			"title": "Bizning mahsulotlar",
+			"text": "Yingli Solar Panda 3.0 PRO Bifacial Peak quvvati: 550W-144 hujayra Ochiq tutashuv kuchlanishi: 50,26V Maksimal quvvat kuchlanishi: 41,57V Maksimal quvvat oqimi: 13,24A Qisqa tutashuv oqimi: 13,99A Harorat koeffitsienti -0,3%/°22278*13 *30mm Og'irligi: 32 kg",
+			"btn1": "Quyosh panellari",
+			"btn2": "Invertorlar",
+			"btn3": "Akkumlyatorlar",
+			"btn4": "Aksessuarlar"
+		},
+		"projects": {
+			"title": "Bizning proektlar",
+			"text": "Loyihalarimiz yuqori sifatli va mijozlarimiz talablariga javob berishidan faxrlanamiz. Bizning maqsadimiz foydalanuvchi ehtiyojlarini qondiradigan va mijozlarimizga muvaffaqiyat keltiradigan mahsulot va xizmatlarni yaratishdir."
+		},
+		"partners": {
+			"title": "Mijozlarimiz ishlarimizni qadrlashadi",
+			"text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, impedit.",
+			"clientName1": "Johnny Andro",
+			"clientJob1": "Director, Company",
+			"comment1": "Biz Comfort Sunpower jamoasi bilan bir necha yildan buyon ishlayapmiz va ularning ish natijalaridan juda mamnunmiz. Ular bizning biznesimizni chuqur tushunishadi va doimo bizga innovatsion yechimlarni taqdim etishga intiladilar."
+		},
+		"clients": { "title": "Bizning mijozlar" },
+		"form": {
+			"title": "Arizangizni shu yerda qoldirishingiz mumkin",
+			"text": "Mutaxassislarimiz tez orada siz bilan bog'lanadi Biz bilan bog'laning va bepul maslahat oling.",
+			"input1": "Ismingiz",
+			"input2": "Nomeringiz"
+		}
+	}
+}

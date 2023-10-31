@@ -4,32 +4,23 @@ import scss from "./individuals.module.scss";
 import img1 from "../../../public/individuals.png";
 import Modal from "../modal";
 import { useState } from "react";
-
+import { useTranslation } from "react-i18next";
 const Individuals = () => {
+	const { t } = useTranslation();
 	const [openForm, setOpenForm] = useState(false);
 	return (
 		<>
 			<div className={scss.individuals}>
 				<div className={scss.individuals_titles}>
-					<Title titleName={"Физические лица"} number="03" />
+					<Title titleName={t("home.individuals.title")} number="03" />
 					{/* Юридическое лицо Legal entity */}
-					<p>
-						Мы устанавливаем наши солнечные панели в жилые дома, предоставляя
-						полный спектр услуг по проектированию, установке и обслуживанию
-						систем возобновляемой энергетики. Начинаем с консультации клиента,
-						где определяем его потребности в солнечной энергии. Затем
-						проектируем систему, выбираем подходящее оборудование и определяем
-						стоимость. После согласования с клиентом, мы производим установку
-						солнечных панелей и обеспечиваем клиентов инструкциями по
-						использованию. Мы также предоставляем услуги по регулярному
-						обслуживанию и поддержке систем солнечной энергии.
-					</p>
+					<p>{t("home.individuals.text")}</p>
 					<span
 						onClick={() => {
 							setOpenForm(true);
 						}}
 					>
-						<Button btnName={"Подробнее"} bg={"#FFA336"} />
+						<Button btnName={t("btn.btn1")} bg={"#FFA336"} />
 					</span>
 				</div>
 				<div className={scss.individuals_imgDiv}>
@@ -42,16 +33,8 @@ const Individuals = () => {
 						<img src={img1} alt={img1} />
 					</div>
 					<div className={scss.modal_individuals_titles}>
-						<Title titleName={"Физические лица"} number="03" />
-						{/* Юридическое лицо Legal entity */}
-						<p>
-							Мы устанавливаем наши солнечные панели в жилые дома, предоставляя
-							полный спектр услуг по проектированию, установке и обслуживанию
-							систем возобновляемой энергетики. Начинаем с консультации клиента,
-							где определяем его потребности в солнечной энергии. Затем
-							проектируем систему, выбираем подходящее оборудование и определяем
-							стоимость.
-						</p>
+						<Title titleName={t("home.individuals.title")} number="03" />
+						<p>{t("home.individuals.text")}</p>
 					</div>
 				</div>
 			</Modal>

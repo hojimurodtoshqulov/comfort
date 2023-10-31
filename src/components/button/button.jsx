@@ -1,10 +1,10 @@
 import scss from "./button.module.scss";
 
-const Button = ({ btnName, bg, width, height }) => {
+const Button = ({ btnName, bg }) => {
 	return (
 		<buttton
 			className={scss.button}
-			style={{ background: bg, width: `${width}%`, height: `${height}px` }}
+			style={{ background: bg,  }}
 			type="submit"
 		>
 			{btnName}
