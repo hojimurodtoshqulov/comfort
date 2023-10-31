@@ -10,6 +10,9 @@
 	@media (max-width: $sm) {
 		padding: 150px 0 0 0;
 	}
+	h5 {
+		text-transform: uppercase;
+	}
 	h2 {
 		@media (max-width: $sm) {
 			width: 100%;

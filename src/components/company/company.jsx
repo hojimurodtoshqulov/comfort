@@ -1,17 +1,13 @@
 import Title from "../title";
 import scss from "./company.module.scss";
-
+import { useTranslation } from "react-i18next";
 const Company = () => {
+	const { t } = useTranslation();
 	return (
 		<div className={scss.company}>
 			<div className={scss.companyCol1}>
-				<Title titleName={"Компания “Comfort Sunpower”"} width={100} />
-				<p>
-					Одна из Лидирующих компаний в Узбекистане над созданием Солнечных
-					панелей останется в топе самых популярных компаний. «Comfort Sunpower»
-					заботится не только о вас и о вашем бюджете, но и заботиться о
-					природе.От полезных ресурсов до экологической технологии
-				</p>
+				<Title titleName={t("about.company.title")} width={100} />
+				<p>{t("about.company.text")}</p>
 			</div>
 			<div className={scss.companyCol2}>
 				<div>
@@ -19,28 +15,28 @@ const Company = () => {
 					<p>
 						<span></span>
 					</p>
-					<h4>Проектов выполнено</h4>
+					<h4>{t("about.company.advantages.title1")}</h4>
 				</div>
 				<div>
 					<h2>100%</h2>
 					<p>
 						<span></span>
 					</p>
-					<h4>Проверенный товар</h4>
+					<h4>{t("about.company.advantages.title2")}</h4>
 				</div>
 				<div>
 					<h2>974+</h2>
 					<p>
 						<span></span>
 					</p>
-					<h4>Клиентов остались довольными</h4>
+					<h4>{t("about.company.advantages.title3")}</h4>
 				</div>
 				<div>
-					<h2>5 лет</h2>
+					<h2>5 {t("about.company.advantages.year")}</h2>
 					<p>
 						<span></span>
 					</p>
-					<h4>Опыта на рынке Узбекистана</h4>
+					<h4>{t("about.company.advantages.title4")}</h4>
 				</div>
 			</div>
 		</div>
