@@ -89,7 +89,7 @@ const Header = ({
 								</AnimatePresence>
 							) : null}
 							<Link to={"/about"}>
-								<Button btnName={"Подробнее"} bg={"#FFA336"} />
+								<Button btnName={t("btn.btn1")} bg={"#FFA336"} />
 							</Link>
 						</motion.div>
 						<AnimatePresence exitBeforeEnter>
