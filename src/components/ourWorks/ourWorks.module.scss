@@ -49,9 +49,9 @@
 					filter: blur(10px);
 				}
 			}
-		}
-		&:last-child {
-			display: none;
+			&:last-child {
+				display: none;
+			}
 		}
 		&:hover {
 			.imgBG {

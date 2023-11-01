@@ -31,7 +31,7 @@ const OurWorks = () => {
 				</div>
 				<div>
 					<img className={scss.logo} src="/clientLogo4.png" alt="clientLogo4" />
-					<img className={scss.imgBG} src="/works5.png" alt="works 5" />
+					<img className={scss.imgBG} src="/IMG_9193.png" alt="works 5" />
 				</div>
 				<div>
 					<img className={scss.logo} src="/clientLogo4.png" alt="clientLogo4" />
@@ -39,7 +39,7 @@ const OurWorks = () => {
 				</div>
 				<div>
 					<img className={scss.logo} src="/clientLogo4.png" alt="clientLogo4" />
-					<img className={scss.imgBG} src="/Image 2.png" alt="works 7" />
+					<img className={scss.imgBG} src="/IMG_9212.png" alt="works 7" />
 				</div>
 				<div>
 					<img className={scss.logo} src="/clientLogo4.png" alt="clientLogo4" />
