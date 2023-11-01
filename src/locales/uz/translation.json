@@ -55,13 +55,14 @@
 			"title": "Arizangizni shu yerda qoldirishingiz mumkin",
 			"text": "Mutaxassislarimiz tez orada siz bilan bog'lanadi Biz bilan bog'laning va bepul maslahat oling.",
 			"input1": "Ismingiz",
-			"input2": "Nomeringiz"
+			"input2": "Nomeringiz",
+			"input3": "Xabaringizni kiriting"
 		}
 	},
 	"about": {
 		"about": {
 			"company": "Kompaniya",
-			"title": "ООО 'Comfort Sunpower'",
+			"title": "ООО Comfort Sunpower",
 			"text": "Qayta tiklanadigan energiyaga ixtisoslashgan dinamik va muvaffaqiyatli rivojlanayotgan kompaniya. Kompaniyamiz O‘zbekistonda ekologik energiya va yetakchi texnologiyalar sohasida yetakchilardan biri hisoblanadi."
 		},
 		"company": {
@@ -87,8 +88,8 @@
 			"text4": "Bizning jamoamiz eng murakkab muammolarni hal qilishga tayyor quyosh energiyasi bo'yicha mutaxassislardir. Professional yordam uchun biz bilan bog'laning."
 		}
 	},
-	"project": {
-		"title": ""
+	"projects": {
+		"title": "Bizning ishlar"
 	},
 	"contact": {
 		"contact": "Aloqa",

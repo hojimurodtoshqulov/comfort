@@ -1,7 +1,7 @@
 import Button from "../button/button";
 import Title from "../title";
 import scss from "./legal.module.scss";
-import img1 from "../../../public/works5.png";
+import img1 from "../../../public/legal.jpg";
 import Modal from "../modal";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -11,7 +11,12 @@ const Legal = () => {
 	return (
 		<>
 			<div className={scss.legal}>
-				<div className={scss.legal_imgDiv}>
+				<div
+					className={scss.legal_imgDiv}
+					onClick={() => {
+						setOpenForm(true);
+					}}
+				>
 					<img src={img1} alt={img1} />
 				</div>
 				<div className={scss.legal_titles}>

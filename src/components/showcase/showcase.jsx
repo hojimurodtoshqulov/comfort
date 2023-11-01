@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import scss from "./showcase.module.scss";
 /* Images */
-import img1 from "../../../public/ComfortSunPower1.png";
+import img1 from "../../../public/ComfortSunPower1.1.png";
 import img2 from "../../../public/ComfortSunPower2.png";
 import img3 from "../../../public/ComfortSunPower3.png";
 import img4 from "../../../public/ComfortSunPower4.png";
@@ -99,7 +99,7 @@ const Header = ({
 								initial={{}}
 								animate={{}}
 								exit={{}}
-								transition={{ duration: 3 }}
+								transition={{ duration: 2 }}
 								src={headerData2[selected].img}
 								alt={headerData2[selected].img}
 							/>
@@ -111,7 +111,7 @@ const Header = ({
 								initial={{ opacity: 0 }}
 								animate={{ opacity: 1 }}
 								exit={{ opacity: 0 }}
-								transition={{ duration: 3 }}
+								transition={{ duration: 2 }}
 								src={headerData[selected].img}
 								alt={headerData[selected].img}
 							/>

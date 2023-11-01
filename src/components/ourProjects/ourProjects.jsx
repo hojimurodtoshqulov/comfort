@@ -10,19 +10,9 @@ const OurProjects = () => {
 	return (
 		<>
 			<div className={scss.title}>
-				<Title titleName={t("home.projects.title")} width={100} />
+				<Title titleName={t("home.projects.title")} width={100} number={"05"} />
 			</div>
 			<div className={scss.ourProjects}>
-				<span className={scss.ourProjects_number}>05</span>
-				{/* <div className={scss.ourProjects_titles}>
-					<h2>НАШИ ПРОЕКТЫ</h2>
-					<p>
-						Мы гордимся тем, что наши проекты отличаются высоким качеством и
-						соответствуют ожиданиям наших клиентов. Наша цель - создавать
-						продукты и услуги, которые удовлетворяют потребности пользователей и
-						приносят успех нашим клиентам
-					</p>
-				</div> */}
 				<Link
 					onClick={scrollToTop}
 					to={"/projects"}

@@ -1,7 +1,7 @@
 import Button from "../button/button";
 import Title from "../title";
 import scss from "./individuals.module.scss";
-import img1 from "../../../public/individuals.png";
+import img1 from "../../../public/individuals.webp";
 import Modal from "../modal";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -23,7 +23,12 @@ const Individuals = () => {
 						<Button btnName={t("btn.btn1")} bg={"#FFA336"} />
 					</span>
 				</div>
-				<div className={scss.individuals_imgDiv}>
+				<div
+					className={scss.individuals_imgDiv}
+					onClick={() => {
+						setOpenForm(true);
+					}}
+				>
 					<img src={img1} alt={img1} />
 				</div>
 			</div>

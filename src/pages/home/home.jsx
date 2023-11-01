@@ -10,6 +10,7 @@ import Form from "../../components/form/form";
 import Partners from "../../components/partners/partners";
 import Legal from "../../components/legal/legal";
 import { useTranslation } from "react-i18next";
+import scss from "./home.module.scss";
 const Home = () => {
 const { t } = useTranslation();
 	return (
@@ -21,25 +22,25 @@ const { t } = useTranslation();
 				textSize="45"
 				textWidth="70"
 			/>
-			<div style={{ margin: "150px 0 0 0" }}>
+			<div className={scss.section}>
 				<HomeAbout />
 			</div>
-			<div style={{ margin: "150px 0 0 0" }}>
+			<div className={scss.section}>
 				<Legal />
 			</div>
-			<div style={{ margin: "150px 0 0 0" }}>
+			<div className={scss.section}>
 				<Individuals />
 			</div>
-			<div style={{ margin: "150px 0 0 0" }}>
+			<div className={scss.section}>
 				<OurProducts />
 			</div>
-			<div style={{ margin: "150px 0 0 0" }}>
+			<div className={scss.section}>
 				<OurProjects />
 			</div>
-			<div style={{ margin: "150px 0 0 0" }}>
+			<div className={scss.section}>
 				<Partners />
 			</div>
-			<div style={{ margin: "150px 0 0 0" }}>
+			<div className={scss.section}>
 				<Clients />
 			</div>
 			<Map />

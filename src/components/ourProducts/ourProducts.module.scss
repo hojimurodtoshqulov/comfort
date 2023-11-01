@@ -67,6 +67,7 @@
 			height: 100%;
 			transition: 0.4s;
 			cursor: pointer;
+			object-fit: cover;
 		}
 	}
 	.buttonDiv {
@@ -96,6 +97,16 @@
 					transform: rotate(-45deg);
 				}
 			}
+		}
+	}
+	&_imgModal {
+		width: 100%;
+		// height: 600px;
+		padding: 50px 0;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 }

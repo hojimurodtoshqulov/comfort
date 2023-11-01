@@ -14,21 +14,22 @@
 	&:hover {
 		transform: scale(1.02);
 	}
-	@media (max-width: $lg) {
-		font-size: 40px;
-		line-height: 40px;
-	}
-	@media (max-width: $md) {
-		font-size: 35px;
-		line-height: 35px;
+	@media (max-width: $sm) {
+		line-height: 30px;
 	}
 	span {
 		position: absolute;
-		top: -10%;
+		top: -20px;
 		left: -50px;
 		z-index: -1;
-		color: #ededed;
+		color: #d3d3d3;
 		font-size: 100px;
 		font-weight: 900;
+		@media (max-width: $md) {
+			top: -20px;
+			left: -50px;
+			font-size: 75px;
+			line-height: 75px;
+		}
 	}
 }

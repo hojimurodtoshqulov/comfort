@@ -9,6 +9,7 @@ const Form = () => {
 	const [formValues, setFormValues] = useState({
 		name: "",
 		phone: "",
+		comment: "",
 	});
 	const handle = (e) => {
 		const newData = { ...formValues };
@@ -22,11 +23,13 @@ const Form = () => {
 		const phone = formValues.phone.value;
 		try {
 			const url = `https://api.telegram.org/bot6624056078:AAFNCrZW2Pfv-VhrKYNfXPv61Jf3Qsmq0ZA/sendMessage?chat_id=-1001813491900&text=${
-				"\n        Ismi:" +
+				"\n              Ismi:" +
 				formValues.name +
 				" " +
-				"\n        Tel:" +
-				formValues.phone
+				"\n              Tel:" +
+				formValues.phone +
+				"\n              Comment:" +
+				formValues.comment
 			}`;
 			await axios
 				.post(url, {
@@ -41,7 +44,7 @@ const Form = () => {
 			console.error(error);
 		}
 		console.log("submit", formValues);
-		setFormValues({ name: "", phone: "" });
+		setFormValues({ name: "", phone: "", comment: "" });
 	};
 	return (
 		<div className="container">
@@ -65,6 +68,14 @@ const Form = () => {
 						value={formValues.phone}
 						type="text"
 						placeholder={t("home.form.input2")}
+						required
+					/>
+					<input
+						id="comment"
+						onChange={(e) => handle(e)}
+						value={formValues.comment}
+						type="text"
+						placeholder={t("home.form.input3")}
 						required
 					/>
 					<button type="submit">

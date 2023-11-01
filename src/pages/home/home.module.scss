@@ -1,1 +1,7 @@
 @import "../../styles/variables.scss";
+.section {
+	padding: 150px 0 0;
+	@media (max-width: $sm) {
+		padding: 100px 0 0;
+	}
+}

@@ -3,6 +3,10 @@
 .contactForm {
 	display: flex;
 	padding: 200px 0 150px;
+	@media (max-width: $sm) {
+		padding: 150px 0 100px;
+		flex-direction: column;
+	}
 	&Col1 {
 		width: 60%;
 		display: flex;
@@ -10,6 +14,11 @@
 		align-items: flex-start;
 		justify-content: flex-start;
 		gap: 30px;
+		@media (max-width: $sm) {
+			width: 100%;
+			align-items: center;
+			text-align: center;
+		}
 		h5 {
 			text-transform: uppercase;
 		}
@@ -17,6 +26,9 @@
 			color: #4a4949;
 			font-size: 28px;
 			font-weight: 700;
+			@media (max-width: $sm) {
+				font-size: 20px;
+			}
 		}
 		form {
 			display: flex;
@@ -25,6 +37,12 @@
 			justify-content: flex-start;
 			align-items: flex-start;
 			width: 100%;
+			@media (max-width: $sm) {
+				gap: 10px;
+				align-items: center;
+				text-align: center;
+				margin-bottom: 40px;
+			}
 			input {
 				width: 70%;
 				border: none;
@@ -32,6 +50,9 @@
 				color: #666;
 				padding: 20px;
 				font-size: 20px;
+				@media (max-width: $sm) {
+					width: 100%;
+				}
 			}
 			button {
 				margin-top: 30px !important;
@@ -48,6 +69,9 @@
 		background: #1395d8;
 		color: $light;
 		padding: 70px 50px;
+		@media (max-width: $sm) {
+			width: 100%;
+		}
 		h5 {
 			color: #ffffffac;
 			font-weight: normal;

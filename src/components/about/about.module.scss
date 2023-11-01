@@ -9,9 +9,13 @@
 	padding: 200px 0 0 0;
 	@media (max-width: $sm) {
 		padding: 150px 0 0 0;
+		text-align: center;
 	}
 	h5 {
 		text-transform: uppercase;
+		@media (max-width: $sm) {
+			margin: 0 auto;
+		}
 	}
 	h2 {
 		@media (max-width: $sm) {

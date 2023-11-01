@@ -97,31 +97,37 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		background: #feb96483;
-		box-shadow: inset 0px 0px 100px #ffa336;
+		background: #23253638;
+		box-shadow: inset 0px 0px 100px #232536;
 		backdrop-filter: blur(10px);
 		transition: 0.5s;
+		text-align: center;
+		color: $secondary;
 		a {
 			margin-bottom: 20px;
 			font-size: 30px;
 			position: relative;
 			z-index: 123;
+			text-align: center;
 			&:nth-child(1) {
-				position: absolute;
-				top: 20%;
-				left: 10%;
 				width: 80%;
+				margin: 0 0 50px;
 				img {
 					width: 100%;
 				}
 			}
 			&:last-child {
-				position: absolute;
-				bottom: 20%;
-				left: 20%;
 				width: 80%;
 				font-size: 22px;
+				margin: 40px 0 0;
 			}
+		}
+		p {
+			color: $secondary;
+			text-shadow: 3px 3px 10px #000000;
+			margin: 40px auto;
+			width: 80%;
+			font-size: 24px;
 		}
 	}
 	.navBG {

@@ -63,6 +63,10 @@
 		&_logo {
 			width: 15%;
 			height: 60%;
+			transition: 0.3s;
+			&:active {
+				transform: scale(0.9);
+			}
 			@media (max-width: $md) {
 				width: 20%;
 			}
@@ -94,6 +98,9 @@
 				flex-wrap: wrap;
 				transition: 0s !important;
 				position: relative;
+				&:active {
+					transform: scale(0.9);
+				}
 				&:hover {
 					span {
 						width: 100%;
@@ -194,6 +201,9 @@
 				height: 22px;
 				border-radius: 50%;
 				position: relative;
+				&:active {
+					transform: scale(0.9);
+				}
 				&:hover {
 					color: $light;
 					div {

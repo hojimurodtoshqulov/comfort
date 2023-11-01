@@ -1,9 +1,12 @@
 import scss from "./HomeAbout.module.scss";
-import img1 from "../../../public/comfortAbout.png";
+import img1 from "../../../public/comfortAbout1.png";
 import Title from "../title";
 import { useTranslation } from "react-i18next";
+import Modal from "../modal";
+import { useState } from "react";
 const HomeAbout = () => {
-const { t } = useTranslation();
+	const { t } = useTranslation();
+	const [openForm, setOpenForm] = useState(false);
 	return (
 		<>
 			<div className="container">
@@ -16,15 +19,28 @@ const { t } = useTranslation();
 						/>
 					</div>
 					<div className={scss.about_imgtext}>
-						<div className={scss.about_imgtextImgdiv}>
+						<div
+							className={scss.about_imgtextImgdiv}
+							onClick={() => {
+								setOpenForm(true);
+							}}
+						>
 							<img src={img1} alt={img1} />
 						</div>
-						<p>
-							{t("home.about.text")}
-						</p>
+						<p>{t("home.about.text")}</p>
 					</div>
 				</div>
 			</div>
+			<Modal open={openForm} setOpen={setOpenForm} width={90}>
+				<div
+					className={scss.about_imgModal}
+					onClick={() => {
+						setOpenForm(false);
+					}}
+				>
+					<img src={img1} alt={img1} />
+				</div>
+			</Modal>
 		</>
 	);
 };

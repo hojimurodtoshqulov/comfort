@@ -1,16 +1,18 @@
 import scss from "./ourWorks.module.scss";
-
-
+import { useTranslation } from "react-i18next";
 const OurWorks = () => {
-
+	const { t } = useTranslation();
 	return (
 		<div className="container">
 			<div className={scss.ourWorks}>
-				<img
-					className={scss.ourWorks_titleImg}
-					src="/workstitle.png"
-					alt="workstitle"
-				/>
+				<h2 className={scss.ourWorks_title}>
+					{t("projects.title")}
+					{/* <img
+						className={scss.ourWorks_titleImg}
+						src="/workstitle.png"
+						alt="workstitle"
+					/> */}
+				</h2>
 				<div>
 					<img className={scss.logo} src="/clientLogo4.png" alt="clientLogo4" />
 					<img className={scss.imgBG} src="/works1.png" alt="works 1" />

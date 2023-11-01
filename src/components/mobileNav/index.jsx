@@ -2,7 +2,6 @@ import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import scss from "./mobileNav.module.scss";
 import { useTranslation } from "react-i18next";
-
 const MobileNav = () => {
 	const { t } = useTranslation();
 	const [isOpen, setIsOpen] = useState(false);
@@ -29,22 +28,23 @@ const MobileNav = () => {
 						<img src="/logo_head.png" alt="logo" />
 					</Link>
 					<NavLink to="/about" onClick={scrollToTop}>
-						{t("О нас")}
+						{t("nav.about")}
 					</NavLink>{" "}
 					<NavLink
 						onClick={scrollToTop}
 						className={scss.dropdown}
 						to={"projects"}
 					>
-						{t("Проекты")}
+						{t("nav.projects")}
 					</NavLink>{" "}
-					<NavLink to="/news" onClick={scrollToTop}>
-						{t("Новости")}
-					</NavLink>{" "}
+					{/* <NavLink to="/news" onClick={scrollToTop}>
+						{t("nav.products")}
+					</NavLink>{" "} */}
 					<NavLink to="/contact" onClick={scrollToTop}>
-						{t("Контакты")}
+						{t("nav.contact")}
 					</NavLink>
-					<a href="tel:+998777777777">+998 77 777 77 77</a>
+					<p>{t("home.showcase.text")}</p>
+					<a href="tel:+998910024242">+998 91 002 42 42</a>
 				</div>
 				<div className={scss.navBG}></div>
 			</div>

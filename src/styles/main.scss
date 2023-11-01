@@ -22,7 +22,7 @@ h2 {
 	font-family: sans-serif;
 	@media (max-width: $xs) {
 		font-weight: 500;
-		font-size: 27px;
+		font-size: 27px !important;
 	}
 	@media (min-width: $xs) {
 		font-weight: 500;
