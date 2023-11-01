@@ -1,9 +1,9 @@
 import { Suspense } from "react";
-import { Nav } from "../components/navbar/nav";
+import { Nav } from "./navbar/nav";
 import { useEffect, useState } from "react";
-import Footer from "../components/footer";
+import Footer from "./footer";
 // import i18next from "i18next";
-import MobileNav from "../components/mobileNav";
+import MobileNav from "./mobileNav";
 import Form from "../components/form/form";
 
 const Layout = ({ children }) => {
