@@ -1,6 +1,6 @@
-import scss from "./ourWorks.module.scss";
+import scss from "./products.module.scss";
 import { useTranslation } from "react-i18next";
-const OurWorks = () => {
+const Products = () => {
 	const { t } = useTranslation();
 	const imgDatas = [
 		{ logo: "/clientLogo4.png", img: "/works1.png" },
@@ -15,8 +15,8 @@ const OurWorks = () => {
 	];
 	return (
 		<div className="container">
-			<div className={scss.ourWorks}>
-				<h2 className={scss.ourWorks_title}>{t("projects.title")}</h2>
+			<div className={scss.products}>
+				<h2 className={scss.products_title}>{t("products.title")}</h2>
 				{imgDatas?.map((item, index) => (
 					<div key={index}>
 						<img className={scss.logo} src={item.logo} alt="client Logo" />
@@ -28,4 +28,4 @@ const OurWorks = () => {
 	);
 };
 
-export default OurWorks;
+export default Products;

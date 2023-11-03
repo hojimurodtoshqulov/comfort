@@ -111,7 +111,14 @@ const Nav = () => {
 								to="/contact"
 								onClick={scrollToTop}
 							>
-								{t("nav.contact")} <span></span>
+								{t("nav.contact")}
+							</NavLink>
+							<NavLink
+								style={{ color: navLinkColor }}
+								to="/products"
+								onClick={scrollToTop}
+							>
+								{t("nav.products")} <span></span>
 							</NavLink>
 							<div className={scss.nav__container_lang}>
 								<div className="dropdown">

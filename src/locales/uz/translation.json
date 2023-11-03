@@ -91,6 +91,9 @@
 	"projects": {
 		"title": "Bizning ishlar"
 	},
+	"products": {
+		"title": "Bizning mahsulotlar"
+	},
 	"contact": {
 		"contact": "Aloqa",
 		"title": "Hali ham savollaringiz bormi?",
