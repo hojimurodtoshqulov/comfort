@@ -39,6 +39,11 @@ const Footer = () => {
 								</Link>
 							</p>
 							<p>
+								<Link to="/products" onClick={scrollToTop}>
+									{t("nav.products")}
+								</Link>
+							</p>
+							<p>
 								<Link to="/projects" onClick={scrollToTop}>
 									{t("nav.projects")}
 								</Link>

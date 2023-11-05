@@ -37,9 +37,9 @@ const MobileNav = () => {
 					>
 						{t("nav.projects")}
 					</NavLink>{" "}
-					{/* <NavLink to="/news" onClick={scrollToTop}>
+					<NavLink to="/products" onClick={scrollToTop}>
 						{t("nav.products")}
-					</NavLink>{" "} */}
+					</NavLink>{" "}
 					<NavLink to="/contact" onClick={scrollToTop}>
 						{t("nav.contact")}
 					</NavLink>
