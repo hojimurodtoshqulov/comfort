@@ -92,7 +92,19 @@
 		"title": "НАШИ РАБОТЫ"
 	},
 	"products": {
-		"title": "НАШИ продукты"
+		"title": "НАШИ продукты",
+		"productTitle1": "Солнечные панели",
+		"productTitle2": "Солнечные панели",
+		"productTitle3": "Солнечные панели",
+		"productTitle4": "Инверторы",
+		"productTitle5": "Инверторы",
+		"productTitle6": "Инверторы",
+		"productTitle7": "Аккумуляторы",
+		"productTitle8": "Аккумуляторы",
+		"productTitle9": "Аккумуляторы",
+		"productTitle10": "Комплектующие",
+		"productTitle11": "Комплектующие",
+		"productTitle12": "Комплектующие"
 	},
 	"contact": {
 		"contact": "КОНТАКТЫ",

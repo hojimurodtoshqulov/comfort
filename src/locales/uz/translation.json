@@ -92,7 +92,19 @@
 		"title": "Bizning ishlar"
 	},
 	"products": {
-		"title": "Bizning mahsulotlar"
+		"title": "Mahsulotlarimiz",
+		"productTitle1": "Quyosh panellari",
+		"productTitle2": "Quyosh panellari",
+		"productTitle3": "Quyosh panellari",
+		"productTitle4": "Invertorlar",
+		"productTitle5": "Invertorlar",
+		"productTitle6": "Invertorlar",
+		"productTitle7": "Akkumlyatorlar",
+		"productTitle8": "Akkumlyatorlar",
+		"productTitle9": "Akkumlyatorlar",
+		"productTitle10": "Aksessuarlar",
+		"productTitle11": "Aksessuarlar",
+		"productTitle12": "Aksessuarlar"
 	},
 	"contact": {
 		"contact": "Aloqa",
