@@ -12,7 +12,7 @@
 		flex-wrap: wrap;
 	}
 	&_col1 {
-		width: 48%;
+		width: 46%;
 		@media (max-width: $sm) {
 			width: 100%;
 			text-align: center;
@@ -20,7 +20,7 @@
 		h2 {
 			@media (max-width: $sm) {
 				width: 60% !important;
-				// line-height: 35px;
+				line-height: 40px;
 				margin: 0 auto;
 			}
 		}
@@ -39,17 +39,21 @@
 	&_col2 {
 		width: 50%;
 		position: relative;
-		padding: 0 0 0 20px;
+		padding: 0 0 0 40px;
+		overflow: hidden;
 		@media (max-width: $sm) {
 			width: 100%;
 			padding: 0;
+			overflow: visible;
+			padding: 0 0 40px 0;
 		}
 		&_leftImg {
 			width: auto;
 			height: 100%;
 			position: absolute;
 			top: 0;
-			left: -1%;
+			left: 0;
+			z-index: 3;
 			@media (max-width: $sm) {
 				display: none;
 			}
@@ -71,6 +75,7 @@
 			align-items: center;
 			justify-content: flex-start;
 			gap: 10px;
+			position: relative;
 			@media (max-width: $sm) {
 				justify-content: center;
 			}
@@ -79,6 +84,61 @@
 					color: #232536;
 					font-size: 14px;
 					font-weight: normal;
+				}
+			}
+			.buttonDiv {
+				position: absolute;
+				bottom: 0px;
+				right: 20%;
+				height: 60px;
+				width: 40%;
+				background: none;
+				// border: 1px solid red;
+				@media (max-width: $sm) {
+					bottom: -60px;
+					right: 25%;
+				}
+				button {
+					width: 40px;
+					height: 40px;
+					background: none;
+					border: 2px solid #4a4949;
+					border-radius: 7px;
+					transform: rotate(45deg);
+					margin-right: 25px;
+					cursor: pointer;
+					transition: 0.4s;
+					@media (max-width: $sm) {
+						width: 30px;
+						height: 30px;
+						bottom: -5px;
+						&:hover {
+							transform: rotate(45deg) scale(1);
+						}
+					}
+					&:hover {
+						transform: rotate(45deg) scale(1.1);
+						@media (max-width: $sm) {
+							&:hover {
+								transform: rotate(45deg) scale(1);
+							}
+						}
+					}
+					&:nth-child(1) {
+					}
+					span {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						svg {
+							color: #4a4949;
+							font-size: 25px;
+							transform: rotate(-45deg);
+							@media (max-width: $sm) {
+								font-size: 20px;
+							}
+						}
+					}
 				}
 			}
 		}

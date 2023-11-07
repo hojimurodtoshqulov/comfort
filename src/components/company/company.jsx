@@ -11,28 +11,28 @@ const Company = () => {
 			</div>
 			<div className={scss.companyCol2}>
 				<div>
-					<h2>960+</h2>
+					<h2>20+</h2>
 					<p>
 						<span></span>
 					</p>
 					<h4>{t("about.company.advantages.title1")}</h4>
 				</div>
 				<div>
-					<h2>100%</h2>
+					<h2>40+</h2>
 					<p>
 						<span></span>
 					</p>
 					<h4>{t("about.company.advantages.title2")}</h4>
 				</div>
 				<div>
-					<h2>974+</h2>
+					<h2>35+</h2>
 					<p>
 						<span></span>
 					</p>
 					<h4>{t("about.company.advantages.title3")}</h4>
 				</div>
 				<div>
-					<h2>5 {t("about.company.advantages.year")}</h2>
+					<h2>2023 </h2>
 					<p>
 						<span></span>
 					</p>

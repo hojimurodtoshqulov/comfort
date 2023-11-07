@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import { FaPhone } from "react-icons/fa";
 import "./dropdown.scss";
 import MobileNav from "../mobileNav";
-const langs = ["ru", "uz"];
+const langs = ["ру", "uz"];
 const Nav = () => {
 	const route = useLocation();
 	const [navColorBg, setnavColorBg] = useState(0);
@@ -49,7 +49,7 @@ const Nav = () => {
 	};
 	useEffect(() => {
 		if (!localStorage.getItem("lang")) {
-			localStorage.setItem("lang", "ru");
+			localStorage.setItem("lang", "ру");
 		} else {
 			setCurrentLang(localStorage.getItem("lang"));
 			i18n.changeLanguage(localStorage.getItem("lang"));

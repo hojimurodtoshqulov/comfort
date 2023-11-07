@@ -7,7 +7,9 @@
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
-		padding: 0 2%;
+		padding: 10% 2%;
+		position: relative;
+		background: #000000a8;
 	}
 	&_titles {
 		display: flex;
@@ -20,6 +22,12 @@
 			width: 100%;
 			text-align: center;
 			align-items: center;
+			h2 {
+				color: $light;
+				span {
+					color: #7d7979;
+				}
+			}
 		}
 		p {
 			color: #7d7979;
@@ -32,6 +40,7 @@
 			@media (max-width: $md) {
 				font-size: 20px;
 				line-height: 25px;
+				color: $light;
 			}
 		}
 	}
@@ -40,7 +49,13 @@
 		height: 600px;
 		overflow: hidden;
 		@media (max-width: $md) {
-			display: none;
+			// display: none;
+			width: 150%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: -50%;
+			z-index: -1;
 		}
 		img {
 			transform: scale(1.1);
@@ -59,9 +74,11 @@
 	display: flex;
 	gap: 70px;
 	@media (max-width: $md) {
+		overflow: hidden;
 		flex-direction: column;
 		width: 100%;
-		padding: 0 2%;
+		padding: 10% 0%;
+		gap: 30px;
 	}
 	h2 {
 		color: $light;
@@ -76,13 +93,21 @@
 		justify-content: center;
 		gap: 50px;
 		width: 50%;
+		@media (max-width: $md) {
+			gap: 20px;
+		}
 		p {
 			color: $light;
 			font-size: 20px;
 			line-height: 25px;
 			transition: 0.4s;
+			@media (max-width: $md) {
+				font-size: 18px;
+				line-height: 19px;
+			}
 			&:hover {
-				color: #c2c2c2;
+				// color: #c2c2c2;
+				transform: scale(1.03);
 			}
 		}
 	}
@@ -90,6 +115,9 @@
 		width: 48%;
 		height: 500px;
 		overflow: hidden;
+		@media (max-width: $md) {
+			height: 300px;
+		}
 		img {
 			transform: scale(1.1);
 			height: 100%;

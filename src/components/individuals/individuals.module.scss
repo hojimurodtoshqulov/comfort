@@ -1,13 +1,15 @@
 @import "../../styles/variables.scss";
 .individuals {
-	padding: 0 0 0 5%;
+	padding: 0 5% 0 0;
 	display: flex;
-	gap: 30px;
+	gap: 70px;
 	@media (max-width: $md) {
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
-		padding: 0 2%;
+		padding: 10% 2%;
+		position: relative;
+		background: #000000a8;
 	}
 	&_titles {
 		display: flex;
@@ -15,11 +17,17 @@
 		align-items: flex-start;
 		justify-content: center;
 		gap: 50px;
-		width: 55%;
+		width: 50%;
 		@media (max-width: $md) {
 			width: 100%;
 			text-align: center;
 			align-items: center;
+			h2 {
+				color: $light;
+				span {
+					color: #7d7979;
+				}
+			}
 		}
 		p {
 			color: #7d7979;
@@ -32,15 +40,22 @@
 			@media (max-width: $md) {
 				font-size: 20px;
 				line-height: 25px;
+				color: $light;
 			}
 		}
 	}
 	&_imgDiv {
-		width: 44%;
+		width: 48%;
 		height: 600px;
 		overflow: hidden;
 		@media (max-width: $md) {
-			display: none;
+			// display: none;
+			width: 150%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			right: -40%;
+			z-index: -1;
 		}
 		img {
 			transform: scale(1.1);
@@ -57,17 +72,52 @@
 .modal_individuals {
 	padding: 50px 0;
 	display: flex;
-	gap: 50px;
+	gap: 70px;
+	@media (max-width: $md) {
+		overflow: hidden;
+		flex-direction: column;
+		width: 100%;
+		padding: 10% 0%;
+		gap: 30px;
+	}
 	h2 {
 		color: $light;
 	}
 	span {
 		color: #4a4949;
 	}
-	&_imgDiv {
+	&_titles {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 50px;
 		width: 50%;
+		@media (max-width: $md) {
+			gap: 20px;
+		}
+		p {
+			color: $light;
+			font-size: 20px;
+			line-height: 25px;
+			transition: 0.4s;
+			@media (max-width: $md) {
+				font-size: 18px;
+				line-height: 19px;
+			}
+			&:hover {
+				// color: #c2c2c2;
+				transform: scale(1.03);
+			}
+		}
+	}
+	&_imgDiv {
+		width: 48%;
 		height: 500px;
 		overflow: hidden;
+		@media (max-width: $md) {
+			height: 200px;
+		}
 		img {
 			transform: scale(1.1);
 			height: 100%;
@@ -76,23 +126,6 @@
 			object-fit: cover;
 			&:hover {
 				transform: scale(1);
-			}
-		}
-	}
-	&_titles {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: center;
-		gap: 50px;
-		width: 55%;
-		p {
-			color: $light;
-			font-size: 20px;
-			line-height: 25px;
-			transition: 0.4s;
-			&:hover {
-				color: #c2c2c2;
 			}
 		}
 	}

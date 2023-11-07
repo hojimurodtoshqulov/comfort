@@ -28,6 +28,7 @@
 			letter-spacing: 2%;
 			margin-bottom: 20px;
 			color: #0364a0;
+			color: $secondary;
 		}
 		.links {
 			display: flex;
@@ -40,8 +41,10 @@
 				font-weight: 600;
 				font-size: 22px;
 				transition: 0.4s;
+				color: $primary;
 				&:hover {
 					padding-left: 20px;
+					color: $secondary;
 				}
 			}
 		}
@@ -73,10 +76,19 @@
 			a {
 				font-size: 21px;
 				line-height: 25px;
+				color: $secondary;
+				text-decoration: underline;
+				&:nth-child(1) {
+					margin-bottom: 10px;
+				}
 			}
 		}
 		p {
 			width: 70%;
+			a {
+				color: $primary;
+				text-decoration: underline;
+			}
 			@media (max-width: $sm) {
 				width: 100%;
 			}
@@ -89,7 +101,7 @@
 		}
 	}
 	&_bottom {
-		background: #ffa336;
+		background: $secondary;
 		color: $light;
 		display: flex;
 		align-items: center;

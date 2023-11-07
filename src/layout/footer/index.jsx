@@ -22,12 +22,21 @@ const Footer = () => {
 								<img src={"/logo_head.png"} alt="logo" />
 							</div>
 							<div className={scss.link}>
-								<a href="tel:+998910024242">+998 91 002 42 42</a>
-								<a href="mailto:info@comfortsunpower.uz">
+								<a href="tel:+998910024242" target="_blank">
+									+998 91 002 42 42
+								</a>
+								<a href="mailto:info@comfortsunpower.uz" target="_blank">
 									info@comfortsunpower.uz
 								</a>
 							</div>
-							<p> {t("footer.adress")} </p>
+							<p>
+								<a
+									href="https://yandex.uz/maps/org/comfort_sunpower/196469771167/?ll=69.313178%2C41.332652&mode=search&sctx=ZAAAAAgBEAAaKAoSCcueBDbnUVFAERGPxMvTp0RAEhIJ%2BWcG8YEd1z8RObh0zHnGxD8iBgABAgMEBSgKOABAo58GSAFqAnV6nQHNzEw9oAEAqAEAvQELoyuUwgEGn5eL9NsF6gEA8gEA%2BAEAggIQY29tZm9ydCBzdW5wb3dlcooCAJICAJoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=69.313178%2C41.332652&sspn=0.012437%2C0.005587&text=comfort%20sunpower&z=16.86"
+									target="_blank"
+								>
+									{t("footer.adress")}
+								</a>
+							</p>
 						</div>
 					</div>
 					<div className={scss.footer__middle}>
@@ -59,13 +68,21 @@ const Footer = () => {
 						<h4>{t("footer.networks")}</h4>
 						<div className={scss.links}>
 							<p>
-								<a href="https://telegram.com">Telegram</a>
+								<a href="https://telegram.com">
+									<FaTelegramPlane />{" "}
+									Telegram
+								</a>
 							</p>
 							<p>
-								<a href="https://instagram.com">Instagram</a>
+								<a href="https://instagram.com/comfort.sunpower?igshid=NzZlODBkYWE4Ng==">
+									<FaInstagram /> {" "} Instagram
+								</a>
 							</p>
 							<p>
-								<a href="https://facebook.com">Facebook</a>
+								<a href="https://www.facebook.com/profile.php?id=61552214782890&mibextid=LQQJ4d">
+									<FaFacebook />{" "}
+									Facebook
+								</a>
 							</p>
 						</div>
 					</div>
@@ -77,10 +94,10 @@ const Footer = () => {
 					<a href="https://telegram.com">
 						<FaTelegramPlane />
 					</a>
-					<a href="https://facebook.com">
+					<a href="https://www.facebook.com/profile.php?id=61552214782890&mibextid=LQQJ4d">
 						<FaFacebook />
 					</a>
-					<a href="https://instagram.com">
+					<a href="https://instagram.com/comfort.sunpower?igshid=NzZlODBkYWE4Ng==">
 						<FaInstagram />
 					</a>
 				</div>
