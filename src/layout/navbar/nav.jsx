@@ -17,7 +17,7 @@ const Nav = () => {
 	const [navLinkColor, setNavLinkColor] = useState("");
 	const [navBoxShadow, setNavBoxShadow] = useState("inset 0px 0px 0px #ff00");
 	const ref = useRef(null);
-	const [currentLang, setCurrentLang] = useState("en");
+	const [currentLang, setCurrentLang] = useState("ru");
 	// const [navContainerBR, setNavContainerBR] = useState("2px solid #fff");
 	const listenScrollEvent = () => {
 		window.scrollY > 80 ? setnavColorBg(10) : setnavColorBg(0);
@@ -49,7 +49,7 @@ const Nav = () => {
 	};
 	useEffect(() => {
 		if (!localStorage.getItem("lang")) {
-			localStorage.setItem("lang", "en");
+			localStorage.setItem("lang", "ru");
 		} else {
 			setCurrentLang(localStorage.getItem("lang"));
 			i18n.changeLanguage(localStorage.getItem("lang"));
