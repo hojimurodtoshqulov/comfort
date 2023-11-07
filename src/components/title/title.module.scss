@@ -12,9 +12,6 @@
 	&:hover {
 		transform: scale(1.02);
 	}
-	@media (max-width: $sm) {
-		line-height: 30px;
-	}
 	span {
 		position: absolute;
 		top: -20px;

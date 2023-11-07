@@ -23,6 +23,8 @@ h2 {
 	@media (max-width: $xs) {
 		font-weight: 500;
 		font-size: 27px !important;
+		line-height: 27px;
+
 	}
 	@media (min-width: $xs) {
 		font-weight: 500;
@@ -43,14 +45,19 @@ h2 {
 	@media (min-width: $xl) {
 		font-weight: 600;
 		font-size: 60px;
+		line-height: 60px;
 	}
 	@media (min-width: $xxl) {
 		font-weight: 600;
 		font-size: 70px;
+		line-height: 70px;
+
 	}
 	@media (min-width: $xxxl) {
 		font-weight: 600;
 		font-size: 90px;
+		line-height: 90px;
+
 	}
 }
 .container {
