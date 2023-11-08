@@ -10,7 +10,7 @@ const Individuals = () => {
 	const [openForm, setOpenForm] = useState(false);
 	return (
 		<>
-			<div className={scss.individuals}>
+			<div className={`${scss.individuals} container`}>
 				<div className={scss.individuals_titles}>
 					<Title titleName={t("home.individuals.title")} number="03" />
 					{/* Юридическое лицо Legal entity */}

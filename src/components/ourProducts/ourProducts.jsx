@@ -42,7 +42,9 @@ const OurProducts = () => {
 						transition={{ duration: 0.2 }}
 						src={data[select].img}
 						alt={data[select].img}
-						onClick={() => {setOpenModal(true)}}
+						onClick={() => {
+							setOpenModal(true);
+						}}
 					/>
 					<div className={scss.buttonDiv}>
 						<button
@@ -72,11 +74,11 @@ const OurProducts = () => {
 				<div className={scss.ourProducts_titles}>
 					<Title titleName={t("home.products.title")} number="04" />
 					<motion.p
-						key={select}
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 1 }}
-						exit={{ opacity: 0 }}
-						transition={{ duration: 0.2 }}
+					// key={select}
+					// initial={{ opacity: 0 }}
+					// animate={{ opacity: 1 }}
+					// exit={{ opacity: 0 }}
+					// transition={{ duration: 0.2 }}
 					>
 						{t("home.products.text")}
 					</motion.p>
