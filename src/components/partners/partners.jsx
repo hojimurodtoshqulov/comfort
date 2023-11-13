@@ -17,13 +17,13 @@ const Partners = () => {
 		},
 		{
 			img: "./user1.png",
-			text: t("home.partners.comment1"),
+			text: t("home.partners.comment2"),
 			name: "Johnny Andro",
 			job: "Director, ",
 		},
 		{
 			img: "./user1.png",
-			text: t("home.partners.comment1"),
+			text: t("home.partners.comment3"),
 			name: "Johnny ",
 			job: ", Company",
 		},

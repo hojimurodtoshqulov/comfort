@@ -15,14 +15,14 @@ const Clients = () => {
 						</div>
 						<span></span>
 						<div className={scss.clientsImagesDiv}>
-							<img src="/clientLogo2.png" alt="/clientLogo2" />
+							<img src="/neftegaz.png" alt="/clientLogo2" />
 						</div>
 						<span></span>
 						<div className={scss.clientsImagesDiv}>
-							<img src="/clientLogo3.png" alt="/clientLogo3" />
+							<img src="/beeline.png" alt="/clientLogo3" />
 						</div>
 						<div className={scss.clientsImagesDiv}>
-							<img src="/clientLogo4.png" alt="/clientLogo4" />
+							<img src="/cho'lquvar.png" alt="/clientLogo4" />
 						</div>
 						<span></span>
 						<div className={scss.clientsImagesDiv}>

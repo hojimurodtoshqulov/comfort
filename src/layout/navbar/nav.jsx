@@ -90,14 +90,12 @@ const Nav = () => {
 						</Link>
 						<div className={scss.nav__container_links}>
 							<NavLink
-								style={{ color: navLinkColor }}
 								to="/about"
 								onClick={scrollToTop}
 							>
 								{t("nav.about")} <span></span>
 							</NavLink>
 							<NavLink
-								style={{ color: navLinkColor }}
 								onClick={scrollToTop}
 								className={scss.dropdown}
 								to={"projects"}
@@ -107,14 +105,12 @@ const Nav = () => {
 								<span></span>
 							</NavLink>
 							<NavLink
-								style={{ color: navLinkColor }}
 								to="/products"
 								onClick={scrollToTop}
 							>
 								{t("nav.products")} <span></span>
 							</NavLink>
 							<NavLink
-								style={{ color: navLinkColor }}
 								to="/contact"
 								onClick={scrollToTop}
 							>

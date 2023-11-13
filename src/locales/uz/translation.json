@@ -48,7 +48,10 @@
 			"text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, impedit.",
 			"clientName1": "Johnny Andro",
 			"clientJob1": "Director, Company",
-			"comment1": "Biz Comfort Sunpower jamoasi bilan bir necha yildan buyon ishlayapmiz va ularning ish natijalaridan juda mamnunmiz. Ular bizning biznesimizni chuqur tushunishadi va doimo bizga innovatsion yechimlarni taqdim etishga intiladilar."
+			"comment1": "Men uyimga o'rnatilgan quyosh panellari haqidagi hayajonimni baham ko'rmoqchiman. Comfort Sunpower bilan ishlash ajoyib bo'ldi. Ular mening ehtiyojlarimni chuqur anglashlarini ko'rsatdilar va quyosh panellarini o'rnatish uchun innovatsion echimni taqdim etdilar.",
+			"comment2": "Biz Comfort Sunpower jamoasi bilan bir necha yildan buyon ishlayapmiz va ularning ish natijalaridan juda mamnunmiz. Ular bizning biznesimizni chuqur tushunishadi va doimo bizga innovatsion yechimlarni taqdim etishga intiladilar.",
+			"comment3": "Biz Comfort Sunpower jamoasi bilan bir necha yildan buyon ishlayapmiz va ularning ish natijalaridan juda mamnunmiz. Ular bizning biznesimizni chuqur tushunishadi va doimo bizga innovatsion yechimlarni taqdim etishga intiladilar.",
+			"img": "./user1.png"
 		},
 		"clients": { "title": "Bizning mijozlar" },
 		"form": {

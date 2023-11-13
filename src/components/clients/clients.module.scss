@@ -48,11 +48,49 @@
 					width: 49%;
 				}
 				img {
-					width: auto;
+					width: 90%;
 					height: auto;
+					transition: 0.4s;
+					// filter: sepia(100%) invert(100%);
+					// filter: brightness(0.25);
+					//  filter: saturate(3);
+					// filter: grayscale(100%) saturate(3) brightness(0);
+					filter: brightness(10);
+					// filter: contrast(160%);
+					// filter: hue-rotate(180deg);
+					// filter: opacity(50%) ;
+					// backdrop-filter: drop-shadow(5px 5px 10px black);
+					&:hover {
+						filter: brightness(1);
+					}
 					@media (max-width: $sm) {
 						width: 90%;
 					}
+				}
+				&:nth-child(1) {
+				}
+				&:nth-child(3) {
+				}
+				&:nth-child(5) {
+					img {
+						filter: invert(100%);
+						&:hover {
+							filter: invert(0);
+						}
+					}
+				}
+				&:nth-child(7) {
+					border: 1px solid red;
+					img {
+						filter: invert(100%);
+						&:hover {
+							filter: invert(0);
+						}
+					}
+				}
+				&:nth-child(9) {
+				}
+				&:nth-child(11) {
 				}
 			}
 			span {
