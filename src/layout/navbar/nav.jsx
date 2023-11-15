@@ -135,8 +135,8 @@ const Nav = () => {
 							</div>
 						</div>
 						<div className={scss.nav__container_phoneLink}>
-							<a href="tel:+998910024242">+998 91 002 42 42</a>
-							<a href="tel:+998910024242">{<FaPhone />}</a>
+							<a href="tel:+998954124242">+998 95 412 42 42</a>
+							<a href="tel:+998954124242">{<FaPhone />}</a>
 						</div>
 						<MobileNav />
 					</div>

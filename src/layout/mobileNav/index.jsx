@@ -44,7 +44,7 @@ const MobileNav = () => {
 						{t("nav.contact")}
 					</NavLink>
 					<p>{t("home.showcase.text")}</p>
-					<a href="tel:+998910024242">+998 91 002 42 42</a>
+					<a href="tel:+998954124242">+998 95 412 42 42</a>
 				</div>
 				<div className={scss.navBG}></div>
 			</div>

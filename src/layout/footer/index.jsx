@@ -22,8 +22,8 @@ const Footer = () => {
 								<img src={"/logo_head.png"} alt="logo" />
 							</div>
 							<div className={scss.link}>
-								<a href="tel:+998910024242" target="_blank">
-									+998 91 002 42 42
+								<a href="tel:+998954124242" target="_blank">
+									+998 95 412 42 42
 								</a>
 								<a href="mailto:info@comfortsunpower.uz" target="_blank">
 									info@comfortsunpower.uz
