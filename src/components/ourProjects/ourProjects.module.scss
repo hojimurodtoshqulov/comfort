@@ -95,11 +95,15 @@
 			.logo {
 				transition: 0.4s;
 				position: absolute;
-				top: 38%;
+				top: 40%;
 				z-index: 3;
 				height: auto;
-				width: auto;
+				width: 80%;
 				opacity: 0;
+				filter: brightness(10);
+				&:hover {
+					filter: brightness(1);
+				}
 				@media (max-width: $sm) {
 					opacity: 1;
 				}
@@ -187,6 +191,11 @@
 			}
 		}
 		img {
+			width: 80%;
+			filter: brightness(10);
+			&:hover {
+				filter: brightness(1);
+			}
 			@media (max-width: $md) {
 				width: 60% !important;
 			}

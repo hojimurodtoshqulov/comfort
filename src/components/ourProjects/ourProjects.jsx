@@ -16,7 +16,7 @@ const OurProjects = () => {
 			id: "1",
 			img: "/ourProjects4.jpg",
 			imgBG: ["/ourProjects4.jpg", "/IMG_9193.png", "/IMG_9212.png"],
-			logo: "/clientLogo2.png",
+			logo: "/fido.png",
 			title: "Fido-biznes.",
 			year: "2023",
 		},
@@ -24,7 +24,7 @@ const OurProjects = () => {
 			id: "2",
 			img: "/ourProjects5.jpg",
 			imgBG: ["/ourProjects5.jpg", "/ourProjects6.jpg", "/ourProjects7.jpg"],
-			logo: "/clientLogo4.png",
+			logo: "/neftegaz.png",
 			title: "UZBEKNEFTGAZ.",
 			year: "2023",
 		},
@@ -32,7 +32,7 @@ const OurProjects = () => {
 			id: "3",
 			img: "/ourProjects3.png",
 			imgBG: ["/ourProjects8.jpg", "/ourProjects9.jpg", "/ourProjects3.png"],
-			logo: "/clientLogo5.png",
+			logo: "/comfortLogoWhite.png",
 			title: "ComfortSun Houses",
 			year: "2023",
 		},
@@ -166,7 +166,11 @@ const OurProjects = () => {
 								</div>
 							</div>
 							<div className={scss.modal_projects_titles}>
-								<Title titleName={item.title} number={`0${item.id}`} />
+								<Title
+									titleName={item.title}
+									number={`0${item.id}`}
+									width={90}
+								/>
 								<img src={item.logo} alt={item.logo} />
 								<p>{t("home.legal.text")}</p>
 								<h3>{item.year}</h3>

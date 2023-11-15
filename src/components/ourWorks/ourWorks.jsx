@@ -3,15 +3,15 @@ import { useTranslation } from "react-i18next";
 const OurWorks = () => {
 	const { t } = useTranslation();
 	const imgDatas = [
-		{ logo: "/clientLogo4.png", img: "/works1.png" },
-		{ logo: "/clientLogo4.png", img: "/works2.png" },
-		{ logo: "/clientLogo4.png", img: "/works3.png" },
-		{ logo: "/clientLogo4.png", img: "/works4.png" },
-		{ logo: "/clientLogo4.png", img: "/IMG_9193.png" },
-		{ logo: "/clientLogo4.png", img: "/Image 1.png" },
-		{ logo: "/clientLogo4.png", img: "/IMG_9212.png" },
-		{ logo: "/clientLogo4.png", img: "/Image 3.png" },
-		{ logo: "/clientLogo4.png", img: "/ourProjects2.png" },
+		{ logo: "/comfortLogoWhite.png", img: "/ourProjects5.jpg" },
+		{ logo: "/comfortLogoWhite.png", img: "/ourProjects6.jpg" },
+		{ logo: "/comfortLogoWhite.png", img: "/ourProjects7.jpg" },
+		{ logo: "/comfortLogoWhite.png", img: "/IMG_9212.png" },
+		{ logo: "/comfortLogoWhite.png", img: "/IMG_9193.png" },
+		{ logo: "/comfortLogoWhite.png", img: "/ourProjects4.jpg" },
+		{ logo: "/comfortLogoWhite.png", img: "/ComfortSunPower1.1.png" },
+		{ logo: "/comfortLogoWhite.png", img: "/neftG2.JPG" },
+		{ logo: "/comfortLogoWhite.png", img: "/ourProjects8.jpg" },
 	];
 	return (
 		<div className="container">

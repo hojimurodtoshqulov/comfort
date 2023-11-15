@@ -21,11 +21,11 @@ const OurProducts = () => {
 			text: t("home.products.text"),
 		},
 		{
-			img: "/ourProducts2.png",
+			img: "/invert1.png",
 			text: t("home.products.text"),
 		},
 		{
-			img: "/ourProducts3.png",
+			img: "/accum1,1.png",
 			text: t("home.products.text"),
 		},
 	];

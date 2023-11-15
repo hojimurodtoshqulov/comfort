@@ -11,7 +11,7 @@ const Clients = () => {
 					<Title titleName={t("home.clients.title")} color={"white"} />
 					<div className={scss.clientsImages}>
 						<div className={scss.clientsImagesDiv}>
-							<img src="/clientLogo1.png" alt="clientLogo1" />
+							<img src="/paxtazor.png" alt="clientLogo1" />
 						</div>
 						<span></span>
 						<div className={scss.clientsImagesDiv}>
@@ -26,11 +26,11 @@ const Clients = () => {
 						</div>
 						<span></span>
 						<div className={scss.clientsImagesDiv}>
-							<img src="/clientLogo5.png" alt="/clientLogo5" />
+							<img src="/fido.png" alt="/clientLogo5" />
 						</div>
 						<span></span>
 						<div className={scss.clientsImagesDiv}>
-							<img src="/clientLogo6.png" alt="/clientLogo6" />
+							<img src="/smartLogo.png" alt="/clientLogo6" />
 						</div>
 					</div>
 				</div>

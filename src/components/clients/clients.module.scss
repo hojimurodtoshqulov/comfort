@@ -61,6 +61,7 @@
 					// filter: opacity(50%) ;
 					// backdrop-filter: drop-shadow(5px 5px 10px black);
 					&:hover {
+						transform: scale(1.05);
 						filter: brightness(1);
 					}
 					@media (max-width: $sm) {
@@ -79,19 +80,18 @@
 						}
 					}
 				}
-				&:nth-child(7) {
-					border: 1px solid red;
-					img {
-						filter: invert(100%);
-						&:hover {
-							filter: invert(0);
-						}
-					}
-				}
-				&:nth-child(9) {
-				}
-				&:nth-child(11) {
-				}
+				// &:nth-child(6) {
+				// 	img {
+				// 		// filter: sepia(100%) invert(100%);
+				// 		&:hover {
+				// 			// filter: sepia(0) invert(0);
+				// 		}
+				// 	}
+				// }
+				// &:nth-child(8) {
+				// }
+				// &:nth-child(10) {
+				// }
 			}
 			span {
 				border-top: 5px dashed $light;

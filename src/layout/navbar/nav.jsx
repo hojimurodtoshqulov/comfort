@@ -75,7 +75,6 @@ const Nav = () => {
 					background: route.pathname === "/" ? navBg : "#232536",
 					transition: "all 0.8s",
 					height: width(),
-					// boxShadow: navBoxShadow,
 				}}
 			>
 				<div className="container">

@@ -2,11 +2,16 @@ import scss from "./products.module.scss";
 import { useTranslation } from "react-i18next";
 import Modal from "../modal";
 import { useState, useRef } from "react";
+import Button from "../button/button";
 const Products = () => {
 	const ref = useRef(null);
 	const { t } = useTranslation();
-	const [select, setSelect] = useState(0);
-	const [openModal, setOpenModal] = useState(false);
+	const [formValues, setFormValues] = useState({
+		name: "",
+		phone: "",
+		comment: "",
+		product: "",
+	});
 	const imgDatas = [
 		{
 			id: "1",
@@ -17,49 +22,49 @@ const Products = () => {
 		{
 			id: "2",
 			logo: "/comfortLogoWhite.png",
-			img: "/IMG_9212.png",
+			img: "/ourProjects5.jpg",
 			title: t("products.productTitle2"),
 		},
 		{
 			id: "3",
 			logo: "/comfortLogoWhite.png",
-			img: "/IMG_9202.png",
+			img: "/ourProjects8.jpg",
 			title: t("products.productTitle3"),
 		},
 		{
 			id: "4",
 			logo: "/comfortLogoWhite.png",
-			img: "/sola1.png",
+			img: "/invert4.png",
 			title: t("products.productTitle4"),
 		},
 		{
 			id: "5",
 			logo: "/comfortLogoWhite.png",
-			img: "/sola4.webp",
+			img: "/invert2.png",
 			title: t("products.productTitle5"),
 		},
 		{
 			id: "6",
 			logo: "/comfortLogoWhite.png",
-			img: "/sola5.webp",
+			img: "/invert5.png",
 			title: t("products.productTitle6"),
 		},
 		{
 			id: "7",
 			logo: "/comfortLogoWhite.png",
-			img: "/accum1.jpg",
+			img: "/accum1,1.png",
 			title: t("products.productTitle7"),
 		},
 		{
 			id: "8",
 			logo: "/comfortLogoWhite.png",
-			img: "/accum2.jpg",
+			img: "/accum1.2.png",
 			title: t("products.productTitle8"),
 		},
 		{
 			id: "9",
 			logo: "/comfortLogoWhite.png",
-			img: "/accum3.jpg",
+			img: "/accum1.3.png",
 			title: t("products.productTitle9"),
 		},
 		{
@@ -81,8 +86,43 @@ const Products = () => {
 			title: t("products.productTitle12"),
 		},
 	];
+	const handle = (e) => {
+		const newData = { ...formValues };
+		newData[e.target.id] = e.target.value;
+		newData.product = imgDatas?.map((item) => (item.id == select ? item.title : null));
+		setFormValues(newData);
+		console.log(newData);
+	};
+	const onSubmit = async (e) => {
+		e.preventDefault();
+		try {
+			const url = `https://api.telegram.org/bot6624056078:AAFNCrZW2Pfv-VhrKYNfXPv61Jf3Qsmq0ZA/sendMessage?chat_id=-1001813491900&text=${
+				"\n              Ismi:" +
+				formValues.name +
+				" " +
+				"\n              Tel:" +
+				formValues.phone +
+				"\n              Comment:" +
+				formValues.comment
+			}`;
+			await axios
+				.post(url, {
+					name: formValues.name,
+					phone: formValues.phone,
+					// project: formProject,
+				})
+				.then((res) => {
+					console.log(res.data);
+				});
+		} catch (error) {
+			console.error(error);
+		}
+		console.log("submit", formValues);
+		setFormValues({ name: "", phone: "", comment: "", product: "" });
+	};
+	const [select, setSelect] = useState(0);
+	const [openModal, setOpenModal] = useState(false);
 	const openData = (el) => {
-		console.log("ref>>>", el.target.id);
 		setSelect(el.target.id);
 		setOpenModal(true);
 	};
@@ -115,6 +155,50 @@ const Products = () => {
 							<div>
 								<img src={item.logo} alt="client Logo" />
 								<h2>{item.title}</h2>
+								<form action="" onSubmit={onSubmit}>
+									<input
+										id="product"
+										onChange={(e) => handle(e)}
+										value={item.title}
+										type="text"
+										name="product"
+										placeholder={t("home.form.input1")}
+										required
+										style={{ display: "none" }}
+									/>
+									<input
+										id="name"
+										onChange={(e) => handle(e)}
+										value={formValues.name}
+										type="text"
+										placeholder={t("home.form.input1")}
+										required
+									/>
+									<input
+										id="phone"
+										onChange={(e) => handle(e)}
+										value={formValues.phone}
+										type="text"
+										placeholder={t("home.form.input2")}
+										required
+									/>
+									<input
+										id="comment"
+										onChange={(e) => handle(e)}
+										value={formValues.comment}
+										type="text"
+										placeholder={t("home.form.input3")}
+										required
+									/>
+									<button type="submit">
+										<Button
+											btnName={t("btn.btn2")}
+											bg={"#1395D8"}
+											width={100}
+											height={60}
+										/>
+									</button>
+								</form>
 							</div>
 						</div>
 					) : null
