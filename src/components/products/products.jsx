@@ -1,11 +1,14 @@
 import scss from "./products.module.scss";
 import { useTranslation } from "react-i18next";
 import Modal from "../modal";
+import axios from "axios";
 import { useState, useRef } from "react";
 import Button from "../button/button";
 const Products = () => {
 	const ref = useRef(null);
 	const { t } = useTranslation();
+	const [select, setSelect] = useState(0);
+	const [openModal, setOpenModal] = useState(false);
 	const [formValues, setFormValues] = useState({
 		name: "",
 		phone: "",
@@ -89,7 +92,9 @@ const Products = () => {
 	const handle = (e) => {
 		const newData = { ...formValues };
 		newData[e.target.id] = e.target.value;
-		newData.product = imgDatas?.map((item) => (item.id == select ? item.title : null));
+		newData.product = imgDatas?.map((item) =>
+			item.id == select ? item.title : null
+		);
 		setFormValues(newData);
 		console.log(newData);
 	};
@@ -97,6 +102,9 @@ const Products = () => {
 		e.preventDefault();
 		try {
 			const url = `https://api.telegram.org/bot6624056078:AAFNCrZW2Pfv-VhrKYNfXPv61Jf3Qsmq0ZA/sendMessage?chat_id=-1001813491900&text=${
+				"\n              Product:" +
+				formValues.product +
+				" " +
 				"\n              Ismi:" +
 				formValues.name +
 				" " +
@@ -119,9 +127,9 @@ const Products = () => {
 		}
 		console.log("submit", formValues);
 		setFormValues({ name: "", phone: "", comment: "", product: "" });
+		setOpenModal(false);
 	};
-	const [select, setSelect] = useState(0);
-	const [openModal, setOpenModal] = useState(false);
+
 	const openData = (el) => {
 		setSelect(el.target.id);
 		setOpenModal(true);
