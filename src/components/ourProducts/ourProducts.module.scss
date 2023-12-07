@@ -98,7 +98,7 @@
 			width: 40px;
 			height: 40px;
 			background: none;
-			border: 2px solid $light;
+			border: 2px solid $secondary;
 			border-radius: 7px;
 			transform: rotate(45deg);
 			// margin-right: 25px;
@@ -118,12 +118,9 @@
 				align-items: center;
 				justify-content: center;
 				svg {
-					color: $light;
+					color: $secondary;
 					font-size: 25px;
 					transform: rotate(-45deg);
-					@media (max-width: $md) {
-						color: $light;
-					}
 				}
 			}
 		}
