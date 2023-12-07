@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import { FaPhone } from "react-icons/fa";
 import "./dropdown.scss";
 import MobileNav from "../mobileNav";
-const langs = ["ру", "uz"];
+const langs = ["ру", "uz", "en", "ch"];
 const Nav = () => {
 	const route = useLocation();
 	const [navColorBg, setnavColorBg] = useState(0);
@@ -88,10 +88,7 @@ const Nav = () => {
 							<img src={navLogo} alt={navLogo} />
 						</Link>
 						<div className={scss.nav__container_links}>
-							<NavLink
-								to="/about"
-								onClick={scrollToTop}
-							>
+							<NavLink to="/about" onClick={scrollToTop}>
 								{t("nav.about")} <span></span>
 							</NavLink>
 							<NavLink
@@ -103,16 +100,10 @@ const Nav = () => {
 
 								<span></span>
 							</NavLink>
-							<NavLink
-								to="/products"
-								onClick={scrollToTop}
-							>
+							<NavLink to="/products" onClick={scrollToTop}>
 								{t("nav.products")} <span></span>
 							</NavLink>
-							<NavLink
-								to="/contact"
-								onClick={scrollToTop}
-							>
+							<NavLink to="/contact" onClick={scrollToTop}>
 								{t("nav.contact")}
 							</NavLink>
 							<div className={scss.nav__container_lang}>

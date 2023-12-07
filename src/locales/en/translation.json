@@ -1,0 +1,126 @@
+{
+	"nav": {
+		"about": "About us",
+		"projects": "Projects",
+		"products": "Products",
+		"contact": "Contacts"
+	},
+	"footer": {
+		"adress": "Uzbekistan, Tashkent, Small ring st, 15",
+		"links": "Main links",
+		"networks": "Social networks"
+	},
+	"btn": {
+		"btn1": "More details",
+		"btn2": "Submit"
+	},
+	"home": {
+		"showcase": {
+			"title": "Comfort Sunpower",
+			"text": "Solar energy for your convenience"
+		},
+		"about": {
+			"title": "Why do we need solar panels?",
+			"text": "Solar panels, also known as solar panels. They play an important role in the field of renewable energy and are becoming increasingly popular in various sectors, including residential buildings, commercial buildings and industrial complexes."
+		},
+		"legal": {
+			"title": "Legal entity",
+			"text": "We install our solar panels into residential homes, providing a full range of services for the design, installation and maintenance of renewable energy systems. We begin with a consultation with the client, where we determine his solar energy needs. We then design the system, select the appropriate equipment and determine price."
+		},
+		"individuals": {
+			"title": "Individuals",
+			"text": "We install our solar panels into residential homes, providing a full range of services for the design, installation and maintenance of renewable energy systems. We begin with a consultation with the client, where we determine his solar energy needs. We then design the system, select the appropriate equipment and determine cost. After agreement with the client, we install solar panels and provide clients with instructions for use. We also provide regular maintenance and support services for solar energy systems."
+		},
+		"products": {
+			"title": "Our products",
+			"text": "UPS emergency UPS system for the home. Suitable for guaranteed power supply to a gas boiler, lighting of the main areas of refrigerators, TVs, Wi-Fi, etc. LiFePO4 6000+ charge cycles 2 year warranty",
+			"btn1": "Solar panels",
+			"btn2": "Inverters",
+			"btn3": "Batteries",
+			"btn4": "Components"
+		},
+		"projects": {
+			"title": "OUR PROJECTS",
+			"text": "We pride ourselves on ensuring that our designs are of high quality and meet our customers' expectations. Our goal is to create products and services that satisfy user needs and bring success to our customers."
+		},
+		"partners": {
+			"title": "Our clients value our work",
+			"text": "We are glad that we chose solar panels from Comfort Sunpower. Comfort Sunpower has favorable prices and class A products. We have been using solar panels for several months now and are very pleased with the result.",
+			"clientName1": "Johnny Andro",
+			"clientJob1": "Director, Company",
+			"comment1": "I would like to share my delight with the solar panels installed in my home. Working with Comfort Sunpower was absolutely wonderful. They showed a deep understanding of my needs and came up with an innovative solution for installing solar panels.",
+			"comment2": "We have been working with the Comfort Sunpower team for several years now and we are very pleased with the results of their work. They have a deep understanding of our business and are always striving to provide us with innovative solutions.",
+			"comment3": "We have been working with the Comfort Sunpower team for several years now and we are very pleased with the results of their work. They have a deep understanding of our business and are always striving to provide us with innovative solutions.",
+			"img": "./user1.png"
+		},
+		"clients": { "title": "OUR CLIENTS" },
+		"form": {
+			"title": "You can leave your application here",
+			"text": "Our specialists will contact you shortly Contact us and get a free consultation.",
+			"input1": "Name",
+			"input2": "Number",
+			"input3": "Enter your message"
+		}
+	},
+	"about": {
+		"about": {
+			"company": "Company",
+			"title": "Comfort Sunpower LLC",
+			"text": "A dynamically and successfully developing company specializing in renewable energy. Our company is one of the leaders in the field of environmental energy and leading technologies in Uzbekistan."
+		},
+		"company": {
+			"title": "Comfort Sunpower Company",
+			"text": "One of the leading companies in Uzbekistan in the creation of Solar panels will remain in the top of the most popular companies. «Comfort Sunpower» cares not only about you and your budget, but also about taking care of nature. From useful resources to environmental technology.",
+			"advantages": {
+				"title1": "Projects completed",
+				"title2": "Verified product",
+				"title3": "The clients were satisfied",
+				"title4": "Experience in the Uzbekistan market",
+				"year": "years"
+			}
+		},
+		"features": {
+			"ourFeatures": "OUR FEATURES",
+			"title": "We offer high quality products and services, with a focus on personalization and environmental responsibility, providing professionalism, experience and excellent service.",
+			"text": "We are ready to solve any challenges in the field of solar energy and help you make the transition to energy-efficient and environmentally friendly solutions!",
+			"title2": "Quality Guarantee",
+			"text2": "We offer high quality products and services, with a focus on individual approach and environmental responsibility.",
+			"title3": "Verified manufacturers",
+			"text3": "We cooperate only with trusted manufacturers who guarantee the high quality and reliability of their products.",
+			"title4": "Qualified specialists",
+			"text4": "Our team is solar energy experts, ready to solve the most complex problems. Contact us for professional support."
+		}
+	},
+	"projects": {
+		"title": "OUR WORK"
+	},
+	"products": {
+		"title": "OUR products",
+		"productTitle1": "Solar Panels",
+		"productTitle2": "Solar Panels",
+		"productTitle3": "Solar Panels",
+		"productTitle4": "Inverters",
+		"productTitle5": "Inverters",
+		"productTitle6": "Inverters",
+		"productTitle7": "Batteries",
+		"productTitle8": "Batteries",
+		"productTitle9": "Batteries",
+		"productTitle10": "Accessories",
+		"productTitle11": "Accessories",
+		"productTitle12": "Parts"
+	},
+	"contact": {
+		"contact": "CONTACTS",
+		"title": "Any questions left?",
+		"text": "Leave your details for feedback.",
+		"input1": "Name",
+		"input2": "Phone number",
+		"input3": "Enter your message",
+		"locationTitle": "Location",
+		"location": "Small ring road, 15",
+		"timeTitle": "Working hours",
+		"timeWeek": "Mon-Fri",
+		"time": "9:00-18:00",
+		"timeText": "Our support team is available 24 hours a day"
+	}
+}
